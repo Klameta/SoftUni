@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BeRZbI5pswLhF+IgsB1d7wdQq9pLS4slZx5Nk9InyngWRHDihe12fz22oi7YgR4/z7cAaT1Uhl9HXg+HFNOMIQ==",
+  "success": true,
+  "projectFilePath": "D:\\softuni\\01\\07 Hotel Room\\07 Hotel Room.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivana\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}

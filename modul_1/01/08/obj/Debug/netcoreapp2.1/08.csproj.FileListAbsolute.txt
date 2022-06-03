@@ -1,0 +1,12 @@
+D:\softuni\01\08\bin\Debug\netcoreapp2.1\08.deps.json
+D:\softuni\01\08\bin\Debug\netcoreapp2.1\08.runtimeconfig.json
+D:\softuni\01\08\bin\Debug\netcoreapp2.1\08.runtimeconfig.dev.json
+D:\softuni\01\08\bin\Debug\netcoreapp2.1\08.dll
+D:\softuni\01\08\bin\Debug\netcoreapp2.1\08.pdb
+D:\softuni\01\08\obj\Debug\netcoreapp2.1\08.csproj.AssemblyReference.cache
+D:\softuni\01\08\obj\Debug\netcoreapp2.1\08.AssemblyInfoInputs.cache
+D:\softuni\01\08\obj\Debug\netcoreapp2.1\08.AssemblyInfo.cs
+D:\softuni\01\08\obj\Debug\netcoreapp2.1\08.csproj.CoreCompileInputs.cache
+D:\softuni\01\08\obj\Debug\netcoreapp2.1\08.dll
+D:\softuni\01\08\obj\Debug\netcoreapp2.1\08.pdb
+D:\softuni\01\08\obj\Debug\netcoreapp2.1\08.genruntimeconfig.cache

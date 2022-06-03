@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6jeU4erN7Hz9gIw8cZQDEYRKahZr6MZXyYhDn3drn0ehqb4iqOEelu6NLSme06e1XQ4av3MzWFioYCawHPQOFQ==",
+  "success": true,
+  "projectFilePath": "D:\\softuni\\01\\08_05 Journey\\08_05 Journey.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivana\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}
