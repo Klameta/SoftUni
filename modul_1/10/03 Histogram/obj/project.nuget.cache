@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zuP149B9rqkh2YFatPJxbjrhiKN/cP26+gUSbUc/0BYqR2YC7UxRAA1E6swrSMcrc04yetjYunAD1Lkmkcmk1A==",
+  "success": true,
+  "projectFilePath": "D:\\softuni\\10\\03 Histogram\\03 Histogram.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivana\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}

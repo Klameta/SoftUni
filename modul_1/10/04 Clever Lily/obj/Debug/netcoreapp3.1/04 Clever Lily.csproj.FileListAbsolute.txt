@@ -1,0 +1,13 @@
+D:\softuni\10\04 Clever Lily\bin\Debug\netcoreapp3.1\04 Clever Lily.exe
+D:\softuni\10\04 Clever Lily\bin\Debug\netcoreapp3.1\04 Clever Lily.deps.json
+D:\softuni\10\04 Clever Lily\bin\Debug\netcoreapp3.1\04 Clever Lily.runtimeconfig.json
+D:\softuni\10\04 Clever Lily\bin\Debug\netcoreapp3.1\04 Clever Lily.runtimeconfig.dev.json
+D:\softuni\10\04 Clever Lily\bin\Debug\netcoreapp3.1\04 Clever Lily.dll
+D:\softuni\10\04 Clever Lily\bin\Debug\netcoreapp3.1\04 Clever Lily.pdb
+D:\softuni\10\04 Clever Lily\obj\Debug\netcoreapp3.1\04 Clever Lily.csproj.AssemblyReference.cache
+D:\softuni\10\04 Clever Lily\obj\Debug\netcoreapp3.1\04 Clever Lily.AssemblyInfoInputs.cache
+D:\softuni\10\04 Clever Lily\obj\Debug\netcoreapp3.1\04 Clever Lily.AssemblyInfo.cs
+D:\softuni\10\04 Clever Lily\obj\Debug\netcoreapp3.1\04 Clever Lily.csproj.CoreCompileInputs.cache
+D:\softuni\10\04 Clever Lily\obj\Debug\netcoreapp3.1\04 Clever Lily.dll
+D:\softuni\10\04 Clever Lily\obj\Debug\netcoreapp3.1\04 Clever Lily.pdb
+D:\softuni\10\04 Clever Lily\obj\Debug\netcoreapp3.1\04 Clever Lily.genruntimeconfig.cache

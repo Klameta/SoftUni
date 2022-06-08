@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "sPi0qG1vdUU96NrmI+OxIsuzP48g8UA972VtXWwml5NUt2qPDSzs15jIW8MbrMp3GFThS5+Qa7XU9UWucpiIkQ==",
+  "success": true,
+  "projectFilePath": "D:\\softuni\\10\\04 Clever Lily\\04 Clever Lily.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivana\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}

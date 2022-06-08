@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jbp8aNfvc9Ukk8t1qlcvVpG+T2+m8RNSCkf2mueYLV48dE93AUzQ/IyE7PWkm2lc2LGJNIYd+ktARHComHvwhw==",
+  "success": true,
+  "projectFilePath": "D:\\softuni\\10\\02 Half Sum Element\\02 Half Sum Element.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivana\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}

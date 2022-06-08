@@ -1,0 +1,13 @@
+D:\softuni\10\03 Histogram\bin\Debug\netcoreapp3.1\03 Histogram.exe
+D:\softuni\10\03 Histogram\bin\Debug\netcoreapp3.1\03 Histogram.deps.json
+D:\softuni\10\03 Histogram\bin\Debug\netcoreapp3.1\03 Histogram.runtimeconfig.json
+D:\softuni\10\03 Histogram\bin\Debug\netcoreapp3.1\03 Histogram.runtimeconfig.dev.json
+D:\softuni\10\03 Histogram\bin\Debug\netcoreapp3.1\03 Histogram.dll
+D:\softuni\10\03 Histogram\bin\Debug\netcoreapp3.1\03 Histogram.pdb
+D:\softuni\10\03 Histogram\obj\Debug\netcoreapp3.1\03 Histogram.csproj.AssemblyReference.cache
+D:\softuni\10\03 Histogram\obj\Debug\netcoreapp3.1\03 Histogram.AssemblyInfoInputs.cache
+D:\softuni\10\03 Histogram\obj\Debug\netcoreapp3.1\03 Histogram.AssemblyInfo.cs
+D:\softuni\10\03 Histogram\obj\Debug\netcoreapp3.1\03 Histogram.csproj.CoreCompileInputs.cache
+D:\softuni\10\03 Histogram\obj\Debug\netcoreapp3.1\03 Histogram.dll
+D:\softuni\10\03 Histogram\obj\Debug\netcoreapp3.1\03 Histogram.pdb
+D:\softuni\10\03 Histogram\obj\Debug\netcoreapp3.1\03 Histogram.genruntimeconfig.cache
