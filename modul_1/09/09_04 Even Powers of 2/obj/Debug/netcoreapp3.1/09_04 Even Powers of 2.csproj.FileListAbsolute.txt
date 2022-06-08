@@ -1,0 +1,13 @@
+D:\softuni\09\09_04 Even Powers of 2\bin\Debug\netcoreapp3.1\09_04 Even Powers of 2.exe
+D:\softuni\09\09_04 Even Powers of 2\bin\Debug\netcoreapp3.1\09_04 Even Powers of 2.deps.json
+D:\softuni\09\09_04 Even Powers of 2\bin\Debug\netcoreapp3.1\09_04 Even Powers of 2.runtimeconfig.json
+D:\softuni\09\09_04 Even Powers of 2\bin\Debug\netcoreapp3.1\09_04 Even Powers of 2.runtimeconfig.dev.json
+D:\softuni\09\09_04 Even Powers of 2\bin\Debug\netcoreapp3.1\09_04 Even Powers of 2.dll
+D:\softuni\09\09_04 Even Powers of 2\bin\Debug\netcoreapp3.1\09_04 Even Powers of 2.pdb
+D:\softuni\09\09_04 Even Powers of 2\obj\Debug\netcoreapp3.1\09_04 Even Powers of 2.csproj.AssemblyReference.cache
+D:\softuni\09\09_04 Even Powers of 2\obj\Debug\netcoreapp3.1\09_04 Even Powers of 2.AssemblyInfoInputs.cache
+D:\softuni\09\09_04 Even Powers of 2\obj\Debug\netcoreapp3.1\09_04 Even Powers of 2.AssemblyInfo.cs
+D:\softuni\09\09_04 Even Powers of 2\obj\Debug\netcoreapp3.1\09_04 Even Powers of 2.csproj.CoreCompileInputs.cache
+D:\softuni\09\09_04 Even Powers of 2\obj\Debug\netcoreapp3.1\09_04 Even Powers of 2.dll
+D:\softuni\09\09_04 Even Powers of 2\obj\Debug\netcoreapp3.1\09_04 Even Powers of 2.pdb
+D:\softuni\09\09_04 Even Powers of 2\obj\Debug\netcoreapp3.1\09_04 Even Powers of 2.genruntimeconfig.cache

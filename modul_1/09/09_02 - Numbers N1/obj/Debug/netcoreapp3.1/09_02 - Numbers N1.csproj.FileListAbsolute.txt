@@ -1,0 +1,13 @@
+D:\softuni\09\09_02 - Numbers N1\bin\Debug\netcoreapp3.1\09_02 - Numbers N1.exe
+D:\softuni\09\09_02 - Numbers N1\bin\Debug\netcoreapp3.1\09_02 - Numbers N1.deps.json
+D:\softuni\09\09_02 - Numbers N1\bin\Debug\netcoreapp3.1\09_02 - Numbers N1.runtimeconfig.json
+D:\softuni\09\09_02 - Numbers N1\bin\Debug\netcoreapp3.1\09_02 - Numbers N1.runtimeconfig.dev.json
+D:\softuni\09\09_02 - Numbers N1\bin\Debug\netcoreapp3.1\09_02 - Numbers N1.dll
+D:\softuni\09\09_02 - Numbers N1\bin\Debug\netcoreapp3.1\09_02 - Numbers N1.pdb
+D:\softuni\09\09_02 - Numbers N1\obj\Debug\netcoreapp3.1\09_02 - Numbers N1.csproj.AssemblyReference.cache
+D:\softuni\09\09_02 - Numbers N1\obj\Debug\netcoreapp3.1\09_02 - Numbers N1.AssemblyInfoInputs.cache
+D:\softuni\09\09_02 - Numbers N1\obj\Debug\netcoreapp3.1\09_02 - Numbers N1.AssemblyInfo.cs
+D:\softuni\09\09_02 - Numbers N1\obj\Debug\netcoreapp3.1\09_02 - Numbers N1.csproj.CoreCompileInputs.cache
+D:\softuni\09\09_02 - Numbers N1\obj\Debug\netcoreapp3.1\09_02 - Numbers N1.dll
+D:\softuni\09\09_02 - Numbers N1\obj\Debug\netcoreapp3.1\09_02 - Numbers N1.pdb
+D:\softuni\09\09_02 - Numbers N1\obj\Debug\netcoreapp3.1\09_02 - Numbers N1.genruntimeconfig.cache

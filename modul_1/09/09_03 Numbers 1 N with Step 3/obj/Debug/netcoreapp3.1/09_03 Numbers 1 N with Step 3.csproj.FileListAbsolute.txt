@@ -1,0 +1,13 @@
+D:\softuni\09\09_03 Numbers 1 N with Step 3\bin\Debug\netcoreapp3.1\09_03 Numbers 1 N with Step 3.exe
+D:\softuni\09\09_03 Numbers 1 N with Step 3\bin\Debug\netcoreapp3.1\09_03 Numbers 1 N with Step 3.deps.json
+D:\softuni\09\09_03 Numbers 1 N with Step 3\bin\Debug\netcoreapp3.1\09_03 Numbers 1 N with Step 3.runtimeconfig.json
+D:\softuni\09\09_03 Numbers 1 N with Step 3\bin\Debug\netcoreapp3.1\09_03 Numbers 1 N with Step 3.runtimeconfig.dev.json
+D:\softuni\09\09_03 Numbers 1 N with Step 3\bin\Debug\netcoreapp3.1\09_03 Numbers 1 N with Step 3.dll
+D:\softuni\09\09_03 Numbers 1 N with Step 3\bin\Debug\netcoreapp3.1\09_03 Numbers 1 N with Step 3.pdb
+D:\softuni\09\09_03 Numbers 1 N with Step 3\obj\Debug\netcoreapp3.1\09_03 Numbers 1 N with Step 3.csproj.AssemblyReference.cache
+D:\softuni\09\09_03 Numbers 1 N with Step 3\obj\Debug\netcoreapp3.1\09_03 Numbers 1 N with Step 3.AssemblyInfoInputs.cache
+D:\softuni\09\09_03 Numbers 1 N with Step 3\obj\Debug\netcoreapp3.1\09_03 Numbers 1 N with Step 3.AssemblyInfo.cs
+D:\softuni\09\09_03 Numbers 1 N with Step 3\obj\Debug\netcoreapp3.1\09_03 Numbers 1 N with Step 3.csproj.CoreCompileInputs.cache
+D:\softuni\09\09_03 Numbers 1 N with Step 3\obj\Debug\netcoreapp3.1\09_03 Numbers 1 N with Step 3.dll
+D:\softuni\09\09_03 Numbers 1 N with Step 3\obj\Debug\netcoreapp3.1\09_03 Numbers 1 N with Step 3.pdb
+D:\softuni\09\09_03 Numbers 1 N with Step 3\obj\Debug\netcoreapp3.1\09_03 Numbers 1 N with Step 3.genruntimeconfig.cache
