@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mW9XXeXRMfFkjnmUrg0+4vDbMtRNrNw0y1f28AJfltBtElAgHbxP1WipIlcSF7X2jxDSK/AIqLP6Evq/ndbhBg==",
+  "success": true,
+  "projectFilePath": "D:\\softuni\\09\\09_07 Sum Numbers\\09_07 Sum Numbers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivana\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+D:\softuni\09\09_06 Vowels Sum\bin\Debug\netcoreapp3.1\09_06 Vowels Sum.exe
+D:\softuni\09\09_06 Vowels Sum\bin\Debug\netcoreapp3.1\09_06 Vowels Sum.deps.json
+D:\softuni\09\09_06 Vowels Sum\bin\Debug\netcoreapp3.1\09_06 Vowels Sum.runtimeconfig.json
+D:\softuni\09\09_06 Vowels Sum\bin\Debug\netcoreapp3.1\09_06 Vowels Sum.runtimeconfig.dev.json
+D:\softuni\09\09_06 Vowels Sum\bin\Debug\netcoreapp3.1\09_06 Vowels Sum.dll
+D:\softuni\09\09_06 Vowels Sum\bin\Debug\netcoreapp3.1\09_06 Vowels Sum.pdb
+D:\softuni\09\09_06 Vowels Sum\obj\Debug\netcoreapp3.1\09_06 Vowels Sum.AssemblyInfoInputs.cache
+D:\softuni\09\09_06 Vowels Sum\obj\Debug\netcoreapp3.1\09_06 Vowels Sum.AssemblyInfo.cs
+D:\softuni\09\09_06 Vowels Sum\obj\Debug\netcoreapp3.1\09_06 Vowels Sum.csproj.CoreCompileInputs.cache
+D:\softuni\09\09_06 Vowels Sum\obj\Debug\netcoreapp3.1\09_06 Vowels Sum.dll
+D:\softuni\09\09_06 Vowels Sum\obj\Debug\netcoreapp3.1\09_06 Vowels Sum.pdb
+D:\softuni\09\09_06 Vowels Sum\obj\Debug\netcoreapp3.1\09_06 Vowels Sum.genruntimeconfig.cache

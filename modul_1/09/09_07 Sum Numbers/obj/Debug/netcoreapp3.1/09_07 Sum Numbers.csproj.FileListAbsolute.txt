@@ -1,0 +1,12 @@
+D:\softuni\09\09_07 Sum Numbers\bin\Debug\netcoreapp3.1\09_07 Sum Numbers.exe
+D:\softuni\09\09_07 Sum Numbers\bin\Debug\netcoreapp3.1\09_07 Sum Numbers.deps.json
+D:\softuni\09\09_07 Sum Numbers\bin\Debug\netcoreapp3.1\09_07 Sum Numbers.runtimeconfig.json
+D:\softuni\09\09_07 Sum Numbers\bin\Debug\netcoreapp3.1\09_07 Sum Numbers.runtimeconfig.dev.json
+D:\softuni\09\09_07 Sum Numbers\bin\Debug\netcoreapp3.1\09_07 Sum Numbers.dll
+D:\softuni\09\09_07 Sum Numbers\bin\Debug\netcoreapp3.1\09_07 Sum Numbers.pdb
+D:\softuni\09\09_07 Sum Numbers\obj\Debug\netcoreapp3.1\09_07 Sum Numbers.AssemblyInfoInputs.cache
+D:\softuni\09\09_07 Sum Numbers\obj\Debug\netcoreapp3.1\09_07 Sum Numbers.AssemblyInfo.cs
+D:\softuni\09\09_07 Sum Numbers\obj\Debug\netcoreapp3.1\09_07 Sum Numbers.csproj.CoreCompileInputs.cache
+D:\softuni\09\09_07 Sum Numbers\obj\Debug\netcoreapp3.1\09_07 Sum Numbers.dll
+D:\softuni\09\09_07 Sum Numbers\obj\Debug\netcoreapp3.1\09_07 Sum Numbers.pdb
+D:\softuni\09\09_07 Sum Numbers\obj\Debug\netcoreapp3.1\09_07 Sum Numbers.genruntimeconfig.cache

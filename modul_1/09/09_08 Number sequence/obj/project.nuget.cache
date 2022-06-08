@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LuDAe6hOT1iAJytZ+ywdnVSXlyvUYkL+yGtrqHGdWpGnHrWb/o/XMcBE7Q4Qvrn2X0w1E8KJvTdf0V15zpLlHw==",
+  "success": true,
+  "projectFilePath": "D:\\softuni\\09\\09_08 Number sequence\\09_08 Number sequence.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivana\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}
