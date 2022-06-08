@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GvySfM0GJ+hnVbihpO1J9RvpDTUkma+/vq/KSmEFDRXJ/jgEYeE1kUCsHn/vsGKaNN9mUmUzVDH7TpqCdCiApg==",
+  "success": true,
+  "projectFilePath": "D:\\softuni\\03\\03_01_09.01.2022\\03_04_01.09.2022\\03_04_01.09.2022.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivana\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}
