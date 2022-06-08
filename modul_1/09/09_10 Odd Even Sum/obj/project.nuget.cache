@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8QmoE7o5KAV5GTIsfjuDSK9bd8oiD3nsICKCXckDHEs0G/FeUwXr0WL7urMrlX8yrWItQpu3bw00Vp65E7Z8mg==",
+  "success": true,
+  "projectFilePath": "D:\\softuni\\09\\09_10 Odd Even Sum\\09_10 Odd Even Sum.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivana\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}

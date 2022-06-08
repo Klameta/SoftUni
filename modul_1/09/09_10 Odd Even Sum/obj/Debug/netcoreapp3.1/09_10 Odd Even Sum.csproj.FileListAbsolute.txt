@@ -1,0 +1,12 @@
+D:\softuni\09\09_10 Odd Even Sum\bin\Debug\netcoreapp3.1\09_10 Odd Even Sum.exe
+D:\softuni\09\09_10 Odd Even Sum\bin\Debug\netcoreapp3.1\09_10 Odd Even Sum.deps.json
+D:\softuni\09\09_10 Odd Even Sum\bin\Debug\netcoreapp3.1\09_10 Odd Even Sum.runtimeconfig.json
+D:\softuni\09\09_10 Odd Even Sum\bin\Debug\netcoreapp3.1\09_10 Odd Even Sum.runtimeconfig.dev.json
+D:\softuni\09\09_10 Odd Even Sum\bin\Debug\netcoreapp3.1\09_10 Odd Even Sum.dll
+D:\softuni\09\09_10 Odd Even Sum\bin\Debug\netcoreapp3.1\09_10 Odd Even Sum.pdb
+D:\softuni\09\09_10 Odd Even Sum\obj\Debug\netcoreapp3.1\09_10 Odd Even Sum.AssemblyInfoInputs.cache
+D:\softuni\09\09_10 Odd Even Sum\obj\Debug\netcoreapp3.1\09_10 Odd Even Sum.AssemblyInfo.cs
+D:\softuni\09\09_10 Odd Even Sum\obj\Debug\netcoreapp3.1\09_10 Odd Even Sum.csproj.CoreCompileInputs.cache
+D:\softuni\09\09_10 Odd Even Sum\obj\Debug\netcoreapp3.1\09_10 Odd Even Sum.dll
+D:\softuni\09\09_10 Odd Even Sum\obj\Debug\netcoreapp3.1\09_10 Odd Even Sum.pdb
+D:\softuni\09\09_10 Odd Even Sum\obj\Debug\netcoreapp3.1\09_10 Odd Even Sum.genruntimeconfig.cache

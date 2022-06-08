@@ -1,0 +1,12 @@
+D:\softuni\09\09_09 Left and Right Sun\bin\Debug\netcoreapp3.1\09_09 Left and Right Sun.exe
+D:\softuni\09\09_09 Left and Right Sun\bin\Debug\netcoreapp3.1\09_09 Left and Right Sun.deps.json
+D:\softuni\09\09_09 Left and Right Sun\bin\Debug\netcoreapp3.1\09_09 Left and Right Sun.runtimeconfig.json
+D:\softuni\09\09_09 Left and Right Sun\bin\Debug\netcoreapp3.1\09_09 Left and Right Sun.runtimeconfig.dev.json
+D:\softuni\09\09_09 Left and Right Sun\bin\Debug\netcoreapp3.1\09_09 Left and Right Sun.dll
+D:\softuni\09\09_09 Left and Right Sun\bin\Debug\netcoreapp3.1\09_09 Left and Right Sun.pdb
+D:\softuni\09\09_09 Left and Right Sun\obj\Debug\netcoreapp3.1\09_09 Left and Right Sun.AssemblyInfoInputs.cache
+D:\softuni\09\09_09 Left and Right Sun\obj\Debug\netcoreapp3.1\09_09 Left and Right Sun.AssemblyInfo.cs
+D:\softuni\09\09_09 Left and Right Sun\obj\Debug\netcoreapp3.1\09_09 Left and Right Sun.csproj.CoreCompileInputs.cache
+D:\softuni\09\09_09 Left and Right Sun\obj\Debug\netcoreapp3.1\09_09 Left and Right Sun.dll
+D:\softuni\09\09_09 Left and Right Sun\obj\Debug\netcoreapp3.1\09_09 Left and Right Sun.pdb
+D:\softuni\09\09_09 Left and Right Sun\obj\Debug\netcoreapp3.1\09_09 Left and Right Sun.genruntimeconfig.cache
