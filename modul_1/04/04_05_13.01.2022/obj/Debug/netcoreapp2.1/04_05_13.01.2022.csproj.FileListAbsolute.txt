@@ -1,0 +1,12 @@
+D:\softuni\04\04_05_13.01.2022\bin\Debug\netcoreapp2.1\04_05_13.01.2022.deps.json
+D:\softuni\04\04_05_13.01.2022\bin\Debug\netcoreapp2.1\04_05_13.01.2022.runtimeconfig.json
+D:\softuni\04\04_05_13.01.2022\bin\Debug\netcoreapp2.1\04_05_13.01.2022.runtimeconfig.dev.json
+D:\softuni\04\04_05_13.01.2022\bin\Debug\netcoreapp2.1\04_05_13.01.2022.dll
+D:\softuni\04\04_05_13.01.2022\bin\Debug\netcoreapp2.1\04_05_13.01.2022.pdb
+D:\softuni\04\04_05_13.01.2022\obj\Debug\netcoreapp2.1\04_05_13.01.2022.csproj.AssemblyReference.cache
+D:\softuni\04\04_05_13.01.2022\obj\Debug\netcoreapp2.1\04_05_13.01.2022.AssemblyInfoInputs.cache
+D:\softuni\04\04_05_13.01.2022\obj\Debug\netcoreapp2.1\04_05_13.01.2022.AssemblyInfo.cs
+D:\softuni\04\04_05_13.01.2022\obj\Debug\netcoreapp2.1\04_05_13.01.2022.csproj.CoreCompileInputs.cache
+D:\softuni\04\04_05_13.01.2022\obj\Debug\netcoreapp2.1\04_05_13.01.2022.dll
+D:\softuni\04\04_05_13.01.2022\obj\Debug\netcoreapp2.1\04_05_13.01.2022.pdb
+D:\softuni\04\04_05_13.01.2022\obj\Debug\netcoreapp2.1\04_05_13.01.2022.genruntimeconfig.cache
