@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 GuiniePig", "01 GuiniePig\01 GuiniePig.csproj", "{3D9E7AA0-96ED-4534-8748-7661FA55EE8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 TheLift", "02 TheLift\02 TheLift.csproj", "{D0755340-146F-4060-A2A8-4ECC5A510792}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D9E7AA0-96ED-4534-8748-7661FA55EE8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D9E7AA0-96ED-4534-8748-7661FA55EE8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D9E7AA0-96ED-4534-8748-7661FA55EE8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D9E7AA0-96ED-4534-8748-7661FA55EE8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0755340-146F-4060-A2A8-4ECC5A510792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0755340-146F-4060-A2A8-4ECC5A510792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0755340-146F-4060-A2A8-4ECC5A510792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0755340-146F-4060-A2A8-4ECC5A510792}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1064A22D-275B-4267-AAB1-24580ABFE78E}
+	EndGlobalSection
+EndGlobal
