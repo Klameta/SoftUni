@@ -12,10 +12,7 @@ namespace _05_Add_and_Subtract
 
             Console.WriteLine(Division(first,second,third));
         }
-        static int Addition(int first, int second)
-        {
-            return first + second;
-        }
+        static int Addition(int first, int second) => first + second;
         static int Division(int first, int second,int third)
         {
             int add = Addition(first, second);
