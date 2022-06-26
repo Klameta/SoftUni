@@ -17,33 +17,36 @@ namespace _05._Bomb_Numbers
         {
             for (int i = 0; i < nums.Count; i++)
             {
-                if (nums[i] == bomb)
+                List<int> numbersToDelete = new List<int>();
+
+                numbersToDelete.AddRange(nums.FindAll(item => item == bomb));
+
+                for (int j = 0; j < numbersToDelete.Count; j++)
                 {
-                    if (i - radius >= 0)
+                    int bombIndex = nums.IndexOf(numbersToDelete[j]);
+
+                    if (bombIndex < 0)
                     {
-                        nums.RemoveRange(i - radius, radius);
+                        break;
                     }
-                    else
+
+                    nums.RemoveAt(bombIndex);
+
+                    for (int k = 0; k < radius; k++)
                     {
-                        for (int k = 0; k < i - 1; k++)
+                        if (bombIndex < nums.Count)
                         {
-                            nums.RemoveAt(k);
-                        }
-                    }
-                    int index = nums.IndexOf(bomb);
-                    if (radius + 1 < nums.Count)
-                    {
-                        nums.RemoveRange(index, radius + 1);
-                    }
-                    else
-                    {
-                        for (int k = index; k < nums.Count; k++)
-                        {
-                            nums.RemoveAt(k);
-                            k--;
+                            nums.RemoveAt(bombIndex);
                         }
                     }
 
+                    for (int m = 0; m < radius; m++)
+                    {
+                        if (bombIndex - 1 - m >= 0 && bombIndex - 1 - m < nums.Count)
+                        {
+                            nums.RemoveAt(bombIndex - 1 - m);
+                        }
+                    }
                 }
             }
             return GetSum(nums);
