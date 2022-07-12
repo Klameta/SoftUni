@@ -8,7 +8,22 @@ namespace _06._Store_Boxes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string[] commandArgs = Console.ReadLine().Split();
+            List<Box> boxes = new List<Box>();
+            while (commandArgs[0]!="end")
+            {
+                int quant = int.Parse(commandArgs[2]);
+                double price = double.Parse(commandArgs[3]);
+                Item item = new Item(commandArgs[1], price);
+                Box box = new Box(commandArgs[0], item, quant, quant*price );
+                boxes.Add(box);
+                commandArgs = Console.ReadLine().Split();
+            }
+            boxes =boxes.OrderByDescending(x => x.Price).ToList();
+            foreach (var box in boxes)
+            {
+                Console.WriteLine(box);
+            }
         }
     }
     class Item
@@ -22,7 +37,7 @@ namespace _06._Store_Boxes
         }
         public override string ToString()
         {
-            return $"{this.Name} – {this.Price:F2}";
+            return $"{this.Name} - ${this.Price:F2}";
         }
     }
     class Box
@@ -37,6 +52,10 @@ namespace _06._Store_Boxes
             this.Item = item;
             this.ItemQuantity = quantity;
             this.Price = price;
+        }
+        public override string ToString()
+        {
+            return $"{this.SerialNumber}\n-- {this.Item}: {this.ItemQuantity}\n-- ${this.Price:F2}";
         }
 
     }
