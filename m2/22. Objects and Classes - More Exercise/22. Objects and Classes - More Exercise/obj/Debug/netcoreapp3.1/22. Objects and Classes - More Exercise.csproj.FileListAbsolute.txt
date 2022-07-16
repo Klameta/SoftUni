@@ -1,0 +1,14 @@
+E:\ivana\softuni\m2\01. Company Roster\22. Objects and Classes - More Exercise\bin\Debug\netcoreapp3.1\22. Objects and Classes - More Exercise.exe
+E:\ivana\softuni\m2\01. Company Roster\22. Objects and Classes - More Exercise\bin\Debug\netcoreapp3.1\22. Objects and Classes - More Exercise.deps.json
+E:\ivana\softuni\m2\01. Company Roster\22. Objects and Classes - More Exercise\bin\Debug\netcoreapp3.1\22. Objects and Classes - More Exercise.runtimeconfig.json
+E:\ivana\softuni\m2\01. Company Roster\22. Objects and Classes - More Exercise\bin\Debug\netcoreapp3.1\22. Objects and Classes - More Exercise.runtimeconfig.dev.json
+E:\ivana\softuni\m2\01. Company Roster\22. Objects and Classes - More Exercise\bin\Debug\netcoreapp3.1\22. Objects and Classes - More Exercise.dll
+E:\ivana\softuni\m2\01. Company Roster\22. Objects and Classes - More Exercise\bin\Debug\netcoreapp3.1\22. Objects and Classes - More Exercise.pdb
+E:\ivana\softuni\m2\01. Company Roster\22. Objects and Classes - More Exercise\obj\Debug\netcoreapp3.1\22. Objects and Classes - More Exercise.csproj.AssemblyReference.cache
+E:\ivana\softuni\m2\01. Company Roster\22. Objects and Classes - More Exercise\obj\Debug\netcoreapp3.1\22. Objects and Classes - More Exercise.GeneratedMSBuildEditorConfig.editorconfig
+E:\ivana\softuni\m2\01. Company Roster\22. Objects and Classes - More Exercise\obj\Debug\netcoreapp3.1\22. Objects and Classes - More Exercise.AssemblyInfoInputs.cache
+E:\ivana\softuni\m2\01. Company Roster\22. Objects and Classes - More Exercise\obj\Debug\netcoreapp3.1\22. Objects and Classes - More Exercise.AssemblyInfo.cs
+E:\ivana\softuni\m2\01. Company Roster\22. Objects and Classes - More Exercise\obj\Debug\netcoreapp3.1\22. Objects and Classes - More Exercise.csproj.CoreCompileInputs.cache
+E:\ivana\softuni\m2\01. Company Roster\22. Objects and Classes - More Exercise\obj\Debug\netcoreapp3.1\22. Objects and Classes - More Exercise.dll
+E:\ivana\softuni\m2\01. Company Roster\22. Objects and Classes - More Exercise\obj\Debug\netcoreapp3.1\22. Objects and Classes - More Exercise.pdb
+E:\ivana\softuni\m2\01. Company Roster\22. Objects and Classes - More Exercise\obj\Debug\netcoreapp3.1\22. Objects and Classes - More Exercise.genruntimeconfig.cache
