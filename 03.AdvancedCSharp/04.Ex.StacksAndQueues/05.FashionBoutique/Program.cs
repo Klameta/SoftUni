@@ -21,7 +21,7 @@ namespace _05.FashionBoutique
 
             int capacity = int.Parse(Console.ReadLine());
             int sumOfClothes = 0;
-            int racks = 1;
+            int racks = 0;
             bool emptyStack = false;
 
             if (clothes.Count <= 0)
