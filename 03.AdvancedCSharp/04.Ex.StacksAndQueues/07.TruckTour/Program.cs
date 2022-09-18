@@ -1,35 +1,41 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Collections;
 
-namespace _07.TruckTour
+internal class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        int numberOfPumps = int.Parse(Console.ReadLine());
+        Queue<string> pumps = new Queue<string>();
+        for (int i = 0; i < numberOfPumps; i++)
         {
-            int petrolPumps = int.Parse(Console.ReadLine());
-            long totalDistance = 0;
-            Stack<long> stations = new Stack<long>();
-                
-            for (int i = 0; i < petrolPumps; i++)
-            {
-                long[] pumpInfo = Console.ReadLine().Split().Select(long.Parse).ToArray();
-                long petrol = pumpInfo[0];
-                long distance = pumpInfo[1];
-
-                stations.Push(petrol);
-                totalDistance += distance + 1;
-            }
-            int index = 0;
-
-            while (totalDistance>0)
-            {
-                totalDistance -= stations.Pop();
-                index++;
-            }
-            Console.WriteLine(index);
+            pumps.Enqueue(Console.ReadLine());
         }
+        for (int index = 0; index < numberOfPumps; index++)
+        {
+            if (CanCompleteFullCircle(pumps))
+            {
+                Console.WriteLine(index);
+                break;
+            }
+            pumps.Enqueue(pumps.Dequeue());
+        }
+    }
+
+    private static bool CanCompleteFullCircle(Queue<string> pumps)
+    {
+        int fuel = 0;
+        bool canCompleteCirle = true;
+        for (int i = 0; i < pumps.Count; i++)
+        {
+            int petrolAmount = int.Parse(pumps.Peek().Split().First());
+            int distance = int.Parse(pumps.Peek().Split().Last());
+            fuel += petrolAmount - distance;
+            if (fuel < 0)
+                canCompleteCirle = false;
+            pumps.Enqueue(pumps.Dequeue());
+        }
+        return canCompleteCirle;
     }
 }
