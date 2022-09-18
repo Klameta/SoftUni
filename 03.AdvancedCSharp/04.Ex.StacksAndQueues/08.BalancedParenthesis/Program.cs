@@ -17,37 +17,41 @@ namespace _08.BalancedParenthesis
             bool endOfArr = false;
 
 
-            while (input[currIndex]!= ')' && input[currIndex] != ']' && input[currIndex] != '}' && !endOfArr)
+            while (input[currIndex] != ')' && input[currIndex] != ']' && input[currIndex] != '}' && !endOfArr)
             {
                 CheckIfIndexIsBeyondArrLenght(input, ref currIndex, ref endOfArr);
-                char leftBracket = input[currIndex-1];
+                char leftBracket = input[currIndex - 1];
                 leftBrackets.Push(leftBracket);
 
             }
-
             bool balanced = true;
+
+            if (leftBrackets.Count != (int)input.Count() / 2 && input.Count() % 2 != 0)
+            {
+                balanced = false;
+            }
             CheckIfIndexIsBeyondArrLenght(input, ref currIndex, ref endOfArr);
 
-            while (balanced && !endOfArr && leftBrackets.Count>0)
+            while (balanced && !endOfArr && leftBrackets.Count > 0)
             {
                 char currBracket = leftBrackets.Pop();
 
-                if (currBracket== '{' && input[currIndex-1]!='}') 
+                if (currBracket == '{' && input[currIndex - 1] != '}')
                 {
                     balanced = false;
                 }
-                else if (currBracket=='[' && input[currIndex-1]!=']')
+                else if (currBracket == '[' && input[currIndex - 1] != ']')
                 {
                     balanced = false;
                 }
-                else if (currBracket=='(' && input[currIndex-1]!=')')
+                else if (currBracket == '(' && input[currIndex - 1] != ')')
                 {
                     balanced = false;
                 }
-                CheckIfIndexIsBeyondArrLenght(input,ref currIndex,ref endOfArr);
+                CheckIfIndexIsBeyondArrLenght(input, ref currIndex, ref endOfArr);
             }
 
-            if (balanced && leftBrackets.Count==0)
+            if (balanced && currIndex - 1 >= input.Count() - 1)
             {
                 Console.WriteLine("YES");
             }
@@ -59,7 +63,7 @@ namespace _08.BalancedParenthesis
 
         private static void CheckIfIndexIsBeyondArrLenght(char[] input, ref int currIndex, ref bool endOfArr)
         {
-            if (currIndex == input.Count() - 1)
+            if (currIndex - 1 == input.Count() - 1)
             {
                 endOfArr = true;
             }
