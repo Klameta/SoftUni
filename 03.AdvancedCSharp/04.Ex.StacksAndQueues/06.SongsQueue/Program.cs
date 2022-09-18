@@ -16,14 +16,17 @@ namespace _06.SongsQueue
                 .ToArray();
             Queue<string> songs = new Queue<string>(initialSongs);
 
-            string[] cmdArgs = Console.ReadLine().Split();
-
             while (songs.Count > 0)
             {
+                string[] cmdArgs = Console.ReadLine().Split();
+
                 switch (cmdArgs[0])
                 {
                     case "Play":
-                        songs.Dequeue();
+                        if (songs.Count > 0)
+                        {
+                            songs.Dequeue();
+                        }
                         break;
                     case "Add":
                         string song = string.Join(" ", cmdArgs.Skip(1));
@@ -41,7 +44,6 @@ namespace _06.SongsQueue
                         Console.WriteLine(string.Join(", ", songs));
                         break;
                 }
-                cmdArgs = Console.ReadLine().Split();
             }
             Console.WriteLine("No more songs!");
         }
