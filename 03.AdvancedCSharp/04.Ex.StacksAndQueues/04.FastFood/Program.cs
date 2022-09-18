@@ -12,27 +12,35 @@ namespace _04.FastFood
             int[] nums = Console.ReadLine().Split().Select(int.Parse).ToArray();
             Queue<int> orders = new Queue<int>();
 
-            Console.WriteLine(nums.Max());
+            if (nums.Length > 0)
+            {
+                Console.WriteLine(nums.Max());
+            }
 
             foreach (var num in nums)
             {
                 orders.Enqueue(num);
             }
 
-            while (orders.Count > 0)
+            bool EnoughtQuanitty = true;
+            while (orders.Count > 0 && EnoughtQuanitty)
             {
-                if (quantity - orders.Peek() > 0)
+                if (quantity - orders.Peek() >= 0)
                 {
 
-                int currentOrder = orders.Peek();
-                quantity -= currentOrder;
-                orders.Dequeue();
+                    int currentOrder = orders.Peek();
+                    quantity -= currentOrder;
+                    orders.Dequeue();
+                }
+                else
+                {
+                    EnoughtQuanitty = false;
                 }
             }
 
             if (orders.Count > 0)
             {
-                Console.WriteLine($"Orders left: {string.Join(", ", orders)}");
+                Console.WriteLine($"Orders left: {string.Join(" ", orders)}");
             }
             else
             {
