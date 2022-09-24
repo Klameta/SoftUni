@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.02.AverageStudentGrades"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.03Largest3Numbers", "01.03Largest3Numbers\01.03Largest3Numbers.csproj", "{70BD9137-2F1A-44D8-9646-E472D2EF1F70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.04.ProductShop", "01.04.ProductShop\01.04.ProductShop.csproj", "{1A18BA7B-129D-40D1-9D1D-E223BF2B5E5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.05.CitiesByContinentAndCountry", "01.05.CitiesByContinentAndCountry\01.05.CitiesByContinentAndCountry.csproj", "{10C9F269-8AC4-4D20-8010-05C805A3698F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{70BD9137-2F1A-44D8-9646-E472D2EF1F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70BD9137-2F1A-44D8-9646-E472D2EF1F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70BD9137-2F1A-44D8-9646-E472D2EF1F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A18BA7B-129D-40D1-9D1D-E223BF2B5E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A18BA7B-129D-40D1-9D1D-E223BF2B5E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A18BA7B-129D-40D1-9D1D-E223BF2B5E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A18BA7B-129D-40D1-9D1D-E223BF2B5E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C9F269-8AC4-4D20-8010-05C805A3698F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C9F269-8AC4-4D20-8010-05C805A3698F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C9F269-8AC4-4D20-8010-05C805A3698F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C9F269-8AC4-4D20-8010-05C805A3698F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
