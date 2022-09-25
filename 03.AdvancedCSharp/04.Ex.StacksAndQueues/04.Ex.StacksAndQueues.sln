@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.TruckTour", "07.TruckTou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.BalancedParenthesis", "08.BalancedParenthesis\08.BalancedParenthesis.csproj", "{CB2E809C-A1EF-4E96-8894-198378862734}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.02.BalancedParethesis", "08.02.BalancedParethesis\08.02.BalancedParethesis.csproj", "{D6DC96F4-BDBE-4023-AA6E-0ED075DCB35B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{CB2E809C-A1EF-4E96-8894-198378862734}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB2E809C-A1EF-4E96-8894-198378862734}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB2E809C-A1EF-4E96-8894-198378862734}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6DC96F4-BDBE-4023-AA6E-0ED075DCB35B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6DC96F4-BDBE-4023-AA6E-0ED075DCB35B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6DC96F4-BDBE-4023-AA6E-0ED075DCB35B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6DC96F4-BDBE-4023-AA6E-0ED075DCB35B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
