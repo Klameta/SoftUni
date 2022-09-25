@@ -8,14 +8,19 @@ namespace _03.MaximalSum
     {
         static void Main(string[] args)
         {
-            int[] dimentions = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] dimentions = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
             int rows = dimentions[0];
             int cols = dimentions[1];
             int[,] numMatrix = new int[rows, cols];
 
+            if (rows < 2 && cols < 2)
+            {
+                return;
+            }
+
             for (int row = 0; row < rows; row++)
             {
-                int[] input = Console.ReadLine().Split().Select(int.Parse).ToArray();
+                int[] input = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
                 for (int col = 0; col < cols; col++)
                 {
                     numMatrix[row, col] = input[col];
@@ -32,12 +37,12 @@ namespace _03.MaximalSum
                 {
 
                     int currSum = numMatrix[row, col]
-                            + numMatrix[row + 1, col]
-                            + numMatrix[row + 2, col]
                             + numMatrix[row, col + 1]
                             + numMatrix[row, col + 2]
+                            + numMatrix[row + 1, col]
                             + numMatrix[row + 1, col + 1]
                             + numMatrix[row + 1, col + 2]
+                            + numMatrix[row + 2, col]
                             + numMatrix[row + 2, col + 1]
                             + numMatrix[row + 2, col + 2];
 
