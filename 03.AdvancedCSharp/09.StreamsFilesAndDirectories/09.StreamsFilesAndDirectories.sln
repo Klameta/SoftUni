@@ -5,13 +5,17 @@ VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.01.OddLines", "01.01.OddLines\01.01.OddLines.csproj", "{BFF31509-1CCF-4FDF-8940-834BFF56E0E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.02.LineNumbers", "01.02.LineNumbers\01.02.LineNumbers.csproj", "{CB53DBD7-5B4D-44AC-BF6E-3B2FB50B7012}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.02.LineNumbers", "01.02.LineNumbers\01.02.LineNumbers.csproj", "{CB53DBD7-5B4D-44AC-BF6E-3B2FB50B7012}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.03.WordCount", "01.03.WordCount\01.03.WordCount.csproj", "{5FAAF4E4-A098-4136-83C3-043DE188A358}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.03.WordCount", "01.03.WordCount\01.03.WordCount.csproj", "{5FAAF4E4-A098-4136-83C3-043DE188A358}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.04.MergeFiles", "01.04.MergeFiles\01.04.MergeFiles.csproj", "{CDC73035-0516-46B5-BF09-E106AFFADC1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.04.MergeFiles", "01.04.MergeFiles\01.04.MergeFiles.csproj", "{CDC73035-0516-46B5-BF09-E106AFFADC1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.05.ExtractSpecialByts", "02.05.ExtractSpecialByts\02.05.ExtractSpecialByts.csproj", "{46A4D395-3565-4001-8551-57847EC908EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.05.ExtractSpecialByts", "02.05.ExtractSpecialByts\02.05.ExtractSpecialByts.csproj", "{46A4D395-3565-4001-8551-57847EC908EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.06.SplitMergeBinaryFile", "02.06.SplitMergeBinaryFile\02.06.SplitMergeBinaryFile.csproj", "{0C598FE8-FF58-4AF7-88F8-E563E21BDC2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.07.FolderSize", "03.07.FolderSize\03.07.FolderSize.csproj", "{676F95A6-188A-419A-8957-FFC03D121A2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{46A4D395-3565-4001-8551-57847EC908EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46A4D395-3565-4001-8551-57847EC908EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46A4D395-3565-4001-8551-57847EC908EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C598FE8-FF58-4AF7-88F8-E563E21BDC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C598FE8-FF58-4AF7-88F8-E563E21BDC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C598FE8-FF58-4AF7-88F8-E563E21BDC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C598FE8-FF58-4AF7-88F8-E563E21BDC2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{676F95A6-188A-419A-8957-FFC03D121A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{676F95A6-188A-419A-8957-FFC03D121A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{676F95A6-188A-419A-8957-FFC03D121A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{676F95A6-188A-419A-8957-FFC03D121A2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
