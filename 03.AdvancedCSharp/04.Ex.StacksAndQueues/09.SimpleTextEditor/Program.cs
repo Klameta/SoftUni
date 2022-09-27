@@ -13,7 +13,7 @@ namespace _09.SimpleTextEditor
         {
             int lines = int.Parse(Console.ReadLine());
             string manipulatedText = string.Empty;
-            Stack<string[]> commands = new Stack<string>();
+            Stack<string[]> commands = new Stack<string[]>();
 
             for (int i = 0; i < lines; i++)
             {
@@ -25,19 +25,26 @@ namespace _09.SimpleTextEditor
                         manipulatedText += cmdArgs[1];
                         break;
                     case "2":
-                        commands.Push(cmdArgs);
+                        string temp = "2 " + manipulatedText.Substring(manipulatedText.Length - 3+1);
+                        commands.Push(temp.Split(' ').ToArray());
+
                         int count = int.Parse(cmdArgs[1]);
-                        for (int к = 0; к < count; к++)
-                        {
-                            manipulatedText = manipulatedText.Remove(manipulatedText.Last());
-                        }
+                        manipulatedText = manipulatedText.Remove(manipulatedText.Length - count);
                         break;
                     case "3":
-                        int index = int.Parse(Console.ReadLine());
-                        Console.WriteLine(manipulatedText[index]);
+                        int index = int.Parse(cmdArgs[1]);
+                        Console.WriteLine(manipulatedText[index - 1]);
                         break;
                     case "4":
-
+                        cmdArgs = commands.Pop();
+                        if (cmdArgs[0] == "1")
+                        {
+                            manipulatedText = manipulatedText.Remove(manipulatedText.Length - cmdArgs[1].Length);
+                        }
+                        else
+                        {
+                            manipulatedText += cmdArgs[1];
+                        }
                         break;
                 }
             }
