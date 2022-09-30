@@ -8,12 +8,14 @@ namespace _03.CountUppercaseWords
 {
     class Program
     {
+            static Func<string, bool> findUppercase = x => Char.IsUpper(x.First());
         static void Main(string[] args)
         {
             string[] upperCases = Console.ReadLine()
                 .Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries)
-                .Where(x => x.First() == x.ToUpper().First())
+                .Where(findUppercase)
                 .ToArray();
+
 
             Console.WriteLine(string.Join("\n", upperCases));
         }
