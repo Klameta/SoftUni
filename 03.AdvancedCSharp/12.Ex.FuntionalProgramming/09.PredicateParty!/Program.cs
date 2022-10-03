@@ -2,68 +2,51 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _09.PredicateParty_
+namespace _09.PredicateParty
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            Func<string, string, bool> startingWithString = (name, givenString) => name.StartsWith(givenString);
-            Func<string, string, bool> endingWithGivenString = (name, givenString) => name.EndsWith(givenString);
-            Func<string, int, bool> sameLenght = (name, lenght) => name.Length == lenght;
+            List<string> people = Console.ReadLine()
+                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+                .ToList();
 
-
-            List<string> names = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).ToList();
-            string[] cmdArgs = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
-
-            while (cmdArgs[0] != "Party!")
+            while (true)
             {
-                List<string> temp = new List<string>();
-                switch (cmdArgs[0])
+                string command = Console.ReadLine();
+
+                if (command == "Party!")
                 {
-                    case "Double":
-                        if (cmdArgs[1] == "Length")
-                        {
-                            int lenght = int.Parse(cmdArgs[2]);
-                            temp = names.Where(x => sameLenght(x, lenght)).ToList();
-                            names = Adding(names, temp);
-                        }
-                        else if (cmdArgs[1] == "StartsWith")
-                        {
-                            temp = names.Where(x => startingWithString(x, cmdArgs[2])).ToList();
-                            names = Adding(names, temp);
-
-                        }
-                        else if (cmdArgs[1] == "EndsWith")
-                        {
-                            temp = names.Where(x => endingWithGivenString(x, cmdArgs[2])).ToList();
-                            names = Adding(names, temp);
-                        }
-                        break;
-                    case "Remove":
-                        if (cmdArgs[1] == "Lenght")
-                        {
-                            int lenght = int.Parse(cmdArgs[2]);
-                            temp = names.Where(x => sameLenght(x, lenght)).ToList();
-                            Removing(names, temp);
-                        }
-                        else if (cmdArgs[1] == "StartsWith")
-                        {
-                            temp = names.Where(x => startingWithString(x, cmdArgs[2])).ToList();
-                            Removing(names, temp);
-                        }
-                        else if (cmdArgs[1] == "EndsWith")
-                        {
-                            temp = names.Where(x => endingWithGivenString(x, cmdArgs[2])).ToList();
-                            Removing(names, temp);
-                        }
-                        break;
+                    break;
                 }
-                cmdArgs = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+
+                string[] tokens = command.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+
+                string action = tokens[0];
+                string filter = tokens[1];
+                string value = tokens[2];
+
+                if (action == "Remove")
+                {
+                    people.RemoveAll(GetPredicate(filter, value)); // p => p.StartsWith("P")
+                }
+                else
+                {
+                    List<string> peopleToDouble = people.FindAll(GetPredicate(filter, value));
+
+                    int index = people.FindIndex(GetPredicate(filter, value));
+
+                    if (index >= 0)
+                    {
+                        people.InsertRange(index, peopleToDouble);
+                    }
+                }
             }
-            if (names.Count > 0)
+
+            if (people.Any())
             {
-                Console.WriteLine($"{string.Join(", ", names)} are going to the party!");
+                Console.WriteLine($"{string.Join(", ", people)} are going to the party!");
             }
             else
             {
@@ -71,18 +54,18 @@ namespace _09.PredicateParty_
             }
         }
 
-        private static List<string> Adding(List<string> names, List<string> temp)
+        static Predicate<string> GetPredicate(string filter, string value)
         {
-            temp.AddRange(names);
-            names = temp;
-            return names;
-        }
-
-        public static void Removing(List<string> names, List<string> temp)
-        {
-            foreach (var str in temp)
+            switch (filter)
             {
-                names.Remove(str);
+                case "StartsWith":
+                    return s => s.StartsWith(value);
+                case "EndsWith":
+                    return s => s.EndsWith(value);
+                case "Length":
+                    return s => s.Length == int.Parse(value);
+                default:
+                    return default(Predicate<string>);
             }
         }
     }
