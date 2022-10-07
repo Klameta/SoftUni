@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.CreatingConstructors", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.OldestFamilyMember", "03.OldestFamilyMember\03.OldestFamilyMember.csproj", "{61D6F2A5-0921-481C-A2AA-A403B3B11B62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.OpinionPoll", "04.OpinionPoll\04.OpinionPoll.csproj", "{F6F085B3-A1FC-466A-AA53-EFD7EAE70046}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{61D6F2A5-0921-481C-A2AA-A403B3B11B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61D6F2A5-0921-481C-A2AA-A403B3B11B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61D6F2A5-0921-481C-A2AA-A403B3B11B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6F085B3-A1FC-466A-AA53-EFD7EAE70046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6F085B3-A1FC-466A-AA53-EFD7EAE70046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6F085B3-A1FC-466A-AA53-EFD7EAE70046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6F085B3-A1FC-466A-AA53-EFD7EAE70046}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
