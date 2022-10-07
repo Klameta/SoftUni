@@ -1,12 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace DefiningClasses
 {
-    internal class Family
+    public class Family
     {
-        public List<Person> People { get; set; }
+        private List<Person> people = new List<Person>();
+
+        public List<Person> People
+        {
+            get { return people; }
+            set { people = value; }
+        }
 
         public Family()
         {
@@ -20,15 +27,7 @@ namespace DefiningClasses
 
         public Person GetOldestMember()
         {
-            Person oldest = new Person();
-            foreach (var member in People)
-            {
-                if (member.Age >= oldest.Age)
-                {
-                    oldest = member;
-                }
-            }
-            return oldest;
+            return People.OrderByDescending(x => x.Age).First();
         }
     }
 }
