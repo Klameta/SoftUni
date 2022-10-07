@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace _02.CreatingConstructors
+namespace DefiningClasses
 {
-    internal class Program
+    public class StartUp
     {
         static void Main(string[] args)
         {
