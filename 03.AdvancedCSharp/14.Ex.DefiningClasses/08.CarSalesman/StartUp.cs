@@ -100,7 +100,7 @@ namespace DefiningClasses
                 }
                 cars.Add(car);
             }
-            Console.WriteLine(string.Join(Environment.NewLine, cars));
+             Console.WriteLine(string.Join(Environment.NewLine, cars));
         }
     }
 }
