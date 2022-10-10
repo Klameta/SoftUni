@@ -5,13 +5,13 @@ using System.Text;
 
 namespace DefiningClasses
 {
-    public class Trainers
+    public class Trainer
     {
         private string name;
         private int badges;
         private List<Pokemon> pokemons;
 
-        public Trainers(string name)
+        public Trainer(string name)
         {
             Name = name;
             badges = 0;
@@ -37,7 +37,7 @@ namespace DefiningClasses
         Action<Pokemon> removingHealth = pokemon => pokemon.Health -= 10;
         Predicate<Pokemon> IsDead = pokemon => pokemon.Health >= 0;
 
-        public void Tournament(string type)
+        public bool Tournament(string type)
         {
             if (pokemons.Any(x => x.Element == type))
             {
@@ -46,12 +46,12 @@ namespace DefiningClasses
             else
             {
                 pokemons.ForEach(x => removingHealth(x));
-                if (true)
+                if (pokemons.Any(x => x.Health <= 0))
                 {
-
+                    return true;
                 }
             }
-            
+            return false;
         }
     }
 }
