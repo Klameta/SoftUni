@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DefiningClasses
 {
@@ -32,7 +33,30 @@ namespace DefiningClasses
                 cmdArgs = Console.ReadLine()
                                 .Split(' ', StringSplitOptions.RemoveEmptyEntries);
             }
-            Console.WriteLine(trainers);
+
+            cmdArgs = Console.ReadLine()
+                .Split(" ", StringSplitOptions.RemoveEmptyEntries);
+
+            while (cmdArgs[0] != "End")
+            {
+                foreach (var trainer in trainers.Values)
+                {
+                    bool isDead = trainer.Tournament(cmdArgs[0]);
+
+                    if (isDead)
+                    {
+                        List<Pokemon> removed = trainer
+                            .Pokemons
+                            .Where(x => x.Health <= 0)
+                            .ToList();
+                        trainer.Pokemons.AddRange(removed);
+                        trainer.Pokemons = trainer.Pokemons.Distinct().ToList();
+                    }
+                }
+                cmdArgs = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            }
+
+            Console.WriteLine(String.Join(Environment.NewLine, trainers.Values));
         }
     }
 }
