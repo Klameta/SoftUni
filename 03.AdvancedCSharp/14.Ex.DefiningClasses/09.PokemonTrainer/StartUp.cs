@@ -25,36 +25,25 @@ namespace DefiningClasses
                 {
                     trainers.Add(trainerName, trainer);
                 }
-                else
-                {
-                    trainers[trainerName].Pokemons.Add(pokemon);
-                }
+                trainers[trainerName].Pokemons.Add(pokemon);
 
                 cmdArgs = Console.ReadLine()
                                 .Split(' ', StringSplitOptions.RemoveEmptyEntries);
             }
 
-            cmdArgs = Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            string tornament = Console.ReadLine();
 
-            while (cmdArgs[0] != "End")
+            while (tornament!= "End")
             {
                 foreach (var trainer in trainers.Values)
                 {
-                    bool isDead = trainer.Tournament(cmdArgs[0]);
-
-                    if (isDead)
-                    {
-                        List<Pokemon> removed = trainer
-                            .Pokemons
-                            .Where(x => x.Health <= 0)
-                            .ToList();
-                        trainer.Pokemons.AddRange(removed);
-                        trainer.Pokemons = trainer.Pokemons.Distinct().ToList();
-                    }
+                    trainer.Tournament(tornament);    
                 }
-                cmdArgs = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                tornament = Console.ReadLine();
             }
+
+            trainers = trainers.OrderByDescending(x => x.Value.Badges)
+                .ToDictionary(trainers => trainers.Key, x => x.Value);
 
             Console.WriteLine(String.Join(Environment.NewLine, trainers.Values));
         }

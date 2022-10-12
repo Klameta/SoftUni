@@ -37,7 +37,7 @@ namespace DefiningClasses
         Action<Pokemon> removingHealth = pokemon => pokemon.Health -= 10;
         Predicate<Pokemon> IsDead = pokemon => pokemon.Health >= 0;
 
-        public bool Tournament(string type)
+        public void Tournament(string type)
         {
             if (pokemons.Any(x => x.Element == type))
             {
@@ -48,10 +48,20 @@ namespace DefiningClasses
                 pokemons.ForEach(x => removingHealth(x));
                 if (pokemons.Any(x => x.Health <= 0))
                 {
-                    return true;
+                    List<Pokemon> removed = Pokemons
+                            .Where(x => x.Health <= 0)
+                            .ToList();
+                    foreach (var pokem in removed.Where(pokem => Pokemons.Contains(pokem)))
+                    {
+                        Pokemons.Remove(pokem);
+                    }
                 }
             }
-            return false;
+        }
+
+        public override string ToString()
+        {
+            return $"{Name} {Badges} {Pokemons.Count}";
         }
     }
 }
