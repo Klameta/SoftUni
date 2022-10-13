@@ -17,7 +17,7 @@ namespace SoftUniParking
 
         }
 
-        public int Count { get; set; }
+        public int Count => cars.Count;
 
         public string AddCar(Car Car)
         {
@@ -32,7 +32,7 @@ namespace SoftUniParking
             }
 
             cars.Add(Car);
-            Count++;
+            //Count++;
             return $"Successfully added new car {Car.Make} {Car.RegistrationNumber}";
         }
         public string RemoveCar(string RegistrationNumber)
@@ -41,7 +41,7 @@ namespace SoftUniParking
             {
                 Car removedCar = cars.Find(x => x.RegistrationNumber == RegistrationNumber);
                 cars.Remove(removedCar);
-                Count--;
+                //Count--;
                 return $"Successfully removed {RegistrationNumber}";
             }
 

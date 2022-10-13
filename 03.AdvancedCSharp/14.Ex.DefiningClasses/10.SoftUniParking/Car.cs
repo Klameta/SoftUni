@@ -8,10 +8,6 @@ namespace SoftUniParking
 {
     public class Car
     {
-        private string make;
-        private string model;
-        private int horsePower;
-        private string registrationNumber;
 
         public Car(string make, string model, int horsePower, string registrationNumber)
         {
@@ -21,26 +17,10 @@ namespace SoftUniParking
             RegistrationNumber = registrationNumber;
         }
 
-        public string Make
-        {
-            get { return make; }
-            set { make = value; }
-        }
-        public string Model
-        {
-            get { return model; }
-            set { model = value; }
-        }
-        public int HorsePower
-        {
-            get { return horsePower; }
-            set { horsePower = value; }
-        }
-        public string RegistrationNumber
-        {
-            get { return registrationNumber; }
-            set { registrationNumber = value; }
-        }
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public int HorsePower { get; set; }
+        public string RegistrationNumber { get; set; }
 
         public override string ToString()
         {
