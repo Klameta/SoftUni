@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.GenericSwapMethodInteger
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.GenericCountMethodString", "05.GenericCountMethodString\05.GenericCountMethodString.csproj", "{4159C814-F841-4AC4-B06A-56F104257DD3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.GenericCountMethodDouble", "06.GenericCountMethodDouble\06.GenericCountMethodDouble.csproj", "{F4966C7D-286D-4F73-84E3-0E24BAF9F0E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{4159C814-F841-4AC4-B06A-56F104257DD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4159C814-F841-4AC4-B06A-56F104257DD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4159C814-F841-4AC4-B06A-56F104257DD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4966C7D-286D-4F73-84E3-0E24BAF9F0E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4966C7D-286D-4F73-84E3-0E24BAF9F0E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4966C7D-286D-4F73-84E3-0E24BAF9F0E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4966C7D-286D-4F73-84E3-0E24BAF9F0E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
