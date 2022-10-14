@@ -4,16 +4,16 @@ using System.Text;
 
 namespace CustomDoublyLinkedList
 {
-    public class DoublyLinkedList
+    public class DoublyLinkedList<T>
     {
-        private ListNode head;
-        private ListNode tail;
+        private ListNode<T> head;
+        private ListNode<T> tail;
 
-        public int Count { get; set; }
+        public int Count { get;private set; }
 
-        public void AddFirst(int element)
+        public void AddFirst(T element)
         {
-            ListNode newNode = new ListNode(element);
+            ListNode<T> newNode = new ListNode<T>(element);
 
             if (Count == 0)
             {
@@ -29,14 +29,13 @@ namespace CustomDoublyLinkedList
 
             Count++;
         }
-        public void AddLast(int element)
+        public void AddLast(T element)
         {
-            ListNode newNode = new ListNode(element);
+            ListNode<T> newNode = new ListNode<T>(element);
 
             if (Count == 0)
             {
                 head = tail = newNode;
-                Count++;
             }
             else
             {
@@ -47,7 +46,7 @@ namespace CustomDoublyLinkedList
             }
             Count++;
         }
-        public int RemoveFirst()
+        public T RemoveFirst()
         {
             if (Count == 0)
             {
@@ -58,17 +57,17 @@ namespace CustomDoublyLinkedList
             if (Count == 1)
             {
                 head = tail = null;
-                Count--;
             }
             else
             {
                 head = head.Next;
                 head.Previous = null;
+
             }
             Count--;
             return removed.Value;
         }
-        public int RemoveLast()
+        public T RemoveLast()
         {
             if (Count==0)
             {
@@ -88,7 +87,7 @@ namespace CustomDoublyLinkedList
             Count--;
             return removed.Value;
         }
-        public void ForEach(Action<int> action)
+        public void ForEach(Action<T> action)
         {
             var temp = head;
             while (temp.Next!=null)
@@ -96,10 +95,11 @@ namespace CustomDoublyLinkedList
                 action(temp.Value);
                 temp = temp.Next;
             }
+            action(temp.Value);
         }
-        public int[] ToArray()
+        public T[] ToArray()
         {
-            var array = new int[Count];
+            var array = new T[Count];
             var temp = head;
 
             for (int i = 0; i < Count; i++)

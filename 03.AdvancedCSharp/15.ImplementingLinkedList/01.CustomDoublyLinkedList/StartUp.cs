@@ -7,10 +7,10 @@ namespace CustomDoublyLinkedList
         static void Main(string[] args)
         {
             DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
-            doublyLinkedList.AddFist(4);
-            doublyLinkedList.AddFist(8);
-            doublyLinkedList.AddFist(7);
-            doublyLinkedList.AddFist(2);
+            doublyLinkedList.AddFirst(4);
+            doublyLinkedList.AddFirst(8);
+            doublyLinkedList.AddFirst(7);
+            doublyLinkedList.AddFirst(2);
             Console.WriteLine(doublyLinkedList.RemoveLast());
 
             Console.WriteLine(String.Join(" ", doublyLinkedList.ToArray()));
