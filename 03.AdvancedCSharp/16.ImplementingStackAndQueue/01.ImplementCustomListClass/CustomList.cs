@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _01.ImplementCustomListClass
 {
     public class CustomList
     {
-        int[] items ;
+        int[] items;
         private const int InitialCapacity = 4;
         private int lenght = InitialCapacity;
         public int Count = 0;
