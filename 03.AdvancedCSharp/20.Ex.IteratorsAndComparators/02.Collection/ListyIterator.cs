@@ -30,6 +30,7 @@ namespace _02.Collection
         }
 
         public bool HasNext() => index < list.Count - 1;
+
         public void Print()
         {
             if (index < 0 || index >= list.Count)
@@ -39,7 +40,7 @@ namespace _02.Collection
             }
             Console.WriteLine(list[index]);
         }
-
+        
         public void PrintAll()
         {
             foreach (var item in list)

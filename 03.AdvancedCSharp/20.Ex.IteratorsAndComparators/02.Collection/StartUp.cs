@@ -9,6 +9,7 @@ namespace _02.Collection
         {
             string[] cmdArgs = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
             ListyIterator<string> listIterator = new ListyIterator<string>();
+
             while (cmdArgs[0] != "END")
             {
                 switch (cmdArgs[0])
