@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21.ExamPreparation", "21.ExamPreparation\21.ExamPreparation.csproj", "{DD3FB414-31AA-4E64-B5C0-7F88F22C5B5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.WallDestroyer", "02.WallDestroyer\02.WallDestroyer.csproj", "{A084D8E8-44CE-4B58-85A9-9C8ED3F58C90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DD3FB414-31AA-4E64-B5C0-7F88F22C5B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD3FB414-31AA-4E64-B5C0-7F88F22C5B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD3FB414-31AA-4E64-B5C0-7F88F22C5B5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A084D8E8-44CE-4B58-85A9-9C8ED3F58C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A084D8E8-44CE-4B58-85A9-9C8ED3F58C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A084D8E8-44CE-4B58-85A9-9C8ED3F58C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A084D8E8-44CE-4B58-85A9-9C8ED3F58C90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
