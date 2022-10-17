@@ -23,7 +23,7 @@ namespace IteratorsAndComparators
             return GetEnumerator();
         }
 
-        class LibraryIterator : IEnumerator<Book>
+       public class LibraryIterator : IEnumerator<Book>
         {
             public List<Book> Books { get; set; }
 

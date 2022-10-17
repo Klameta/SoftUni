@@ -1,14 +1,30 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 namespace IteratorsAndComparators
 {
-    class Library : IEnumerable<Book>
+    public class Library : IEnumerable<Book>
     {
-        class LibraryIterator : IEnumerator<Book>
+        public List<Book> Books { get; set; }
+
+        public Library(params Book[] books)
+        {
+            Books = new List<Book>(books);
+            Books.Sort();
+        }
+        public IEnumerator<Book> GetEnumerator()
+        {
+            return new LibraryIterator(this.Books);
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
+       public class LibraryIterator : IEnumerator<Book>
         {
             public List<Book> Books { get; set; }
 
@@ -28,7 +44,7 @@ namespace IteratorsAndComparators
 
             public bool MoveNext()
             {
-                return ++this.currentIndex < this.Books.Count();
+                return ++this.currentIndex < this.Books.Count;
             }
 
             public void Reset()
@@ -37,21 +53,5 @@ namespace IteratorsAndComparators
             }
         }
 
-        public List<Book> Books { get; set; }
-
-        public Library(params Book[] books)
-        {
-            this.Books = new List<Book>(books);
-        }
-
-        public IEnumerator<Book> GetEnumerator()
-        {
-            return new LibraryIterator(this.Books);
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return this.GetEnumerator();
-        }
     }
 }
