@@ -53,7 +53,7 @@ namespace _02.PawnWars
             }
             else
             {
-                Console.WriteLine("Game over! {0} capture on {1}.", (capture == 0 ? "Black" : "White"), (capture == 0 ? $"{(char)('a' + whiteCol)}{whiteRow}" : $"{(char)('a' + blackCol)}{8 - blackRow}"));
+                Console.WriteLine("Game over! {0} capture on {1}.", (capture == 0 ? "Black" : "White"), (capture == 0 ? $"{(char)('a' + whiteCol)}{8-whiteRow}" : $"{(char)('a' + blackCol)}{8 - blackRow}"));
             }
         }
         public static void Move(ref int blackRow, ref int blackCol, ref int whiteRow, ref int whiteCol, char[,] chessboard, ref int promoted, ref int capture)
