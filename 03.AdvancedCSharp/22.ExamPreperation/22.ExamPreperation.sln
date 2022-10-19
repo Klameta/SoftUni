@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.FoodFinded", "01.FoodFinded\01.FoodFinded.csproj", "{8E97FA7B-CCF3-4D01-A393-5E659168B78C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.FoodFinded", "01.FoodFinded\01.FoodFinded.csproj", "{8E97FA7B-CCF3-4D01-A393-5E659168B78C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.PawnWars", "02.PawnWars\02.PawnWars.csproj", "{F2877960-9FBC-4CE1-955C-C9F7FC381BDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8E97FA7B-CCF3-4D01-A393-5E659168B78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E97FA7B-CCF3-4D01-A393-5E659168B78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E97FA7B-CCF3-4D01-A393-5E659168B78C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2877960-9FBC-4CE1-955C-C9F7FC381BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2877960-9FBC-4CE1-955C-C9F7FC381BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2877960-9FBC-4CE1-955C-C9F7FC381BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2877960-9FBC-4CE1-955C-C9F7FC381BDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
