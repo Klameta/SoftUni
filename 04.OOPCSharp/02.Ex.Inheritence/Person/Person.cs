@@ -9,12 +9,6 @@ namespace Person
         private string name;
         private int age;
 
-        public Person(string name, int age)
-        {
-            Name = name;
-            Age = age;
-        }
-
         public string Name
         {
             get { return name; }
@@ -28,6 +22,12 @@ namespace Person
                 if (value >= 0) age = value;
             }
         }
+        public Person(string name, int age)
+        {
+            this.Name = name;
+            this.Age = age;
+        }
+
 
         public override string ToString()
         {
