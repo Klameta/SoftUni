@@ -25,6 +25,7 @@ namespace _04.PizzaCalories
             Grams = grams;
             Calories = CaloriesCalculator();
         }
+        
 
         public override string ToString()
         {
@@ -33,9 +34,9 @@ namespace _04.PizzaCalories
 
         private double CaloriesCalculator()
         {
-            double flourMod = FlourType == "White" ? WHITE_CALORIES : WHOLEGRAIN_CALORIES;
-            double bakingMod = BakingTechnique == "Crispy" ? CRISPY_CALORIES :
-                BakingTechnique == "Chewy" ? CHEWY_CALORIES : HOMEMADE_CALORIES;
+            double flourMod = FlourType.ToLower() == "white" ? WHITE_CALORIES : WHOLEGRAIN_CALORIES;
+            double bakingMod = BakingTechnique.ToLower() == "crispy" ? CRISPY_CALORIES :
+                BakingTechnique.ToLower() == "chewy" ? CHEWY_CALORIES : HOMEMADE_CALORIES;
 
             return (Grams * BASE_CALORIES) * flourMod * bakingMod;
         }
@@ -45,7 +46,7 @@ namespace _04.PizzaCalories
             get { return flourType; }
             set
             {
-                if (!(value == "White" || value == "Wholegrain")) throw new ArgumentException("Invalid type of dough.");
+                if (!(value.ToLower() == "white" || value.ToLower() == "wholegrain")) throw new ArgumentException("Invalid type of dough.");
                 flourType = value;
             }
         }
@@ -54,7 +55,7 @@ namespace _04.PizzaCalories
             get { return bakingTechnique; }
             set
             {
-                if (!(value == "Crispy" || value == "Chewy" || value == "Homemade")) throw new ArgumentException("Invalid type of dough.");
+                if (!(value.ToLower() == "crispy" || value.ToLower() == "chewy" || value.ToLower() == "homemade")) throw new ArgumentException("Invalid type of dough.");
                 bakingTechnique = value;
             }
         }

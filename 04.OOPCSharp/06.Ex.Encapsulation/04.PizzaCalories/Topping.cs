@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace _04.PizzaCalories
@@ -25,12 +26,12 @@ namespace _04.PizzaCalories
 
         private double CaloriesCalculator()
         {
-            double typeMod = type == "Meat" ? MEAT_MOD :
-                type == "Veggies" ? VEG_MOD :
-                type == "Cheese" ? CHEESE_MOD :
+            double typeMod = type.ToLower() == "meat" ? MEAT_MOD :
+                type.ToLower() == "veggies" ? VEG_MOD :
+                type.ToLower() == "cheese" ? CHEESE_MOD :
                 SAUCE_MOD;
 
-            return (Grams * BASE_MOD) * typeMod;
+            return Grams * BASE_MOD * typeMod;
         }
 
         public override string ToString()
@@ -43,7 +44,7 @@ namespace _04.PizzaCalories
             get { return type; }
             set
             {
-                if (!(value == "Meat" || value == "Veggies" || value == "Cheese" || value == "Sauce")) throw new ArgumentException($"Cannot place {value} on top of your pizza.");
+                if (!(value.ToLower() == "meat" || value.ToLower() == "veggies" || value.ToLower() == "cheese" || value.ToLower() == "sauce")) throw new ArgumentException($"Cannot place {char.ToUpper(value[0]).ToString() + string.Join("",value.Skip(1))} on top of your pizza.");
                 type = value;
             }
         }
@@ -52,7 +53,7 @@ namespace _04.PizzaCalories
             get { return grams; }
             set
             {
-                if (value < 1 || value > 50) throw new ArgumentException($"{Type} weight should be in the range[1..50].");
+                if (value < 1 || value > 50) throw new ArgumentException($"{char.ToUpper(Type[0]).ToString() + string.Join("", Type.Skip(1))} weight should be in the range [1..50].");
                 grams = value;
             }
         }
