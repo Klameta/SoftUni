@@ -8,18 +8,18 @@ namespace _03.ShoppingSpree
     {
         static void Main(string[] args)
         {
-            List<Person> people = new List<Person>();
-            List<Product> products = new List<Product>();
-
-            List<string> peopleInfo = Console.ReadLine()
-                .Split(";", StringSplitOptions.RemoveEmptyEntries)
-                .ToList();
-            List<string> productInfo = Console.ReadLine()
-                .Split(";", StringSplitOptions.RemoveEmptyEntries)
-                .ToList();
-
             try
             {
+                List<Person> people = new List<Person>();
+                List<Product> products = new List<Product>();
+
+                List<string> peopleInfo = Console.ReadLine()
+                    .Split(";", StringSplitOptions.RemoveEmptyEntries)
+                    .ToList();
+                List<string> productInfo = Console.ReadLine()
+                    .Split(";", StringSplitOptions.RemoveEmptyEntries)
+                    .ToList();
+
                 Reading(people, products, peopleInfo, productInfo);
 
                 string[] cmdArgs = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
@@ -33,10 +33,16 @@ namespace _03.ShoppingSpree
                     Product product = products.FirstOrDefault(x => x.Name == productName);
 
                     if (person != null && product != null)
-                    person.Purchase(product);
+                        person.Purchase(product);
 
                     cmdArgs = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
                 }
+
+                foreach (var person in people)
+                {
+                    Console.WriteLine(person);
+                }
+
 
             }
             catch (Exception ex)
@@ -44,12 +50,8 @@ namespace _03.ShoppingSpree
 
                 Console.WriteLine(ex.Message);
             }
-
-            foreach (var person in people)
-            {
-                Console.WriteLine(person);
-            }
         }
+
 
         private static void Reading(List<Person> people, List<Product> products, List<string> peopleInfo, List<string> productInfo)
         {
@@ -71,3 +73,4 @@ namespace _03.ShoppingSpree
         }
     }
 }
+
