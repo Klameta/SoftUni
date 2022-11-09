@@ -10,7 +10,7 @@ namespace _04.PizzaCalories
         static void Main(string[] args)
         {
             List<string> cmdArgs = Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+                .Split(" ")
                 .ToList();
 
             try
