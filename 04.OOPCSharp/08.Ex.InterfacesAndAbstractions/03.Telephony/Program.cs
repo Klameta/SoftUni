@@ -8,13 +8,15 @@ namespace _03.Telephony
         static void Main(string[] args)
         {
             Smartphone smartphone = new Smartphone();
+            Stationaryphone stationaryphone = new Stationaryphone();
             
-            string[] numbers = Console.ReadLine().Split(' ');
-            string[] sites = Console.ReadLine().Split(' ');
+            string[] numbers = Console.ReadLine().Split();
+            string[] sites = Console.ReadLine().Split();
 
             foreach (var number in numbers)
             {
-                Console.WriteLine(smartphone.Calling(number));
+                if (number.Length == 7) Console.WriteLine(stationaryphone.Call(number));
+                else Console.WriteLine(smartphone.Call(number));
             }
 
             foreach (string site in sites)
