@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Vehicle", "01.Vehicle\01.Vehicle.csproj", "{A0C4DFDF-6F1E-405E-A6AC-D7277F7A9D5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.Vehicle", "01.Vehicle\01.Vehicle.csproj", "{A0C4DFDF-6F1E-405E-A6AC-D7277F7A9D5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.VehiclesExtension", "02.VehiclesExtension\02.VehiclesExtension.csproj", "{DB0D95B7-D4B3-4AE1-AE56-7A0FA88FA467}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.VehiclesExtension", "02.VehiclesExtension\02.VehiclesExtension.csproj", "{DB0D95B7-D4B3-4AE1-AE56-7A0FA88FA467}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Raiding", "03.Raiding\03.Raiding.csproj", "{8155DAA3-B283-48B4-9177-35C0E1CDE6C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.Raiding", "03.Raiding\03.Raiding.csproj", "{8155DAA3-B283-48B4-9177-35C0E1CDE6C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.WildFarm", "04.WildFarm\04.WildFarm.csproj", "{EA74A26F-4EF6-4A13-A92A-A9CE201D1F43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8155DAA3-B283-48B4-9177-35C0E1CDE6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8155DAA3-B283-48B4-9177-35C0E1CDE6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8155DAA3-B283-48B4-9177-35C0E1CDE6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA74A26F-4EF6-4A13-A92A-A9CE201D1F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA74A26F-4EF6-4A13-A92A-A9CE201D1F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA74A26F-4EF6-4A13-A92A-A9CE201D1F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA74A26F-4EF6-4A13-A92A-A9CE201D1F43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
