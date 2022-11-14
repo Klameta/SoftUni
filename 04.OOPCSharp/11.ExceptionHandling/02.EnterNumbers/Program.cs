@@ -9,7 +9,6 @@ namespace _02.EnterNumbers
         {
             List<int> ints = new List<int>();
             int numChecking = 1;
-            List<int> intsn;
 
             while (ints.Count < 10)
             {
