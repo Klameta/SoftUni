@@ -8,15 +8,21 @@ namespace _02.EnterNumbers
         static void Main(string[] args)
         {
             List<int> ints = new List<int>();
+            int numChecking = 1;
+            List<int> intsn;
 
             while (ints.Count < 10)
             {
                 try
                 {
-                    int curr = ReadNumber(1, 100);
-                    if (curr != -1) ints.Add(curr);
+                    int curr = ReadNumber(numChecking, 100);
+                    if (curr != -1)
+                    {
+                        ints.Add(curr);
+                        numChecking=curr;
+                    }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     Console.WriteLine("Invalid Number!");
                 }
