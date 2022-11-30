@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.High-QualityMistakes", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.MissionPrivateImpossible", "03.MissionPrivateImpossible\03.MissionPrivateImpossible.csproj", "{8B2CCA09-D420-4FD7-84BF-153627EC5823}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Collector", "04.Collector\04.Collector.csproj", "{7ECBC8DC-5922-407F-83EF-BE98EF09FD40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.CreateAttribute", "05.CreateAttribute\05.CreateAttribute.csproj", "{50ED75E3-55D2-427D-BE2E-2B443C46D60A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{8B2CCA09-D420-4FD7-84BF-153627EC5823}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B2CCA09-D420-4FD7-84BF-153627EC5823}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B2CCA09-D420-4FD7-84BF-153627EC5823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ECBC8DC-5922-407F-83EF-BE98EF09FD40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ECBC8DC-5922-407F-83EF-BE98EF09FD40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ECBC8DC-5922-407F-83EF-BE98EF09FD40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ECBC8DC-5922-407F-83EF-BE98EF09FD40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50ED75E3-55D2-427D-BE2E-2B443C46D60A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50ED75E3-55D2-427D-BE2E-2B443C46D60A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50ED75E3-55D2-427D-BE2E-2B443C46D60A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50ED75E3-55D2-427D-BE2E-2B443C46D60A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
