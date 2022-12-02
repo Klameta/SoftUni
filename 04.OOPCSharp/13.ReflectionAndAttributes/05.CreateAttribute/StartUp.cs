@@ -1,11 +1,12 @@
 ﻿using System;
 
-namespace _05.CreateAttribute
+namespace AuthorProblem
 {
-    internal class Program
+    public class StartUp
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("Hello World!");
         }
     }
