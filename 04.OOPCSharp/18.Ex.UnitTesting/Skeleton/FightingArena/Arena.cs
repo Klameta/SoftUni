@@ -7,7 +7,7 @@ namespace FightingArena
     public class Arena
     {
         private readonly List<Warrior> warriors;
-
+        
         public Arena()
         {
             this.warriors = new List<Warrior>();

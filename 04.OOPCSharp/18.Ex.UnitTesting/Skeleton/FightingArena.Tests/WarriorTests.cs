@@ -137,6 +137,43 @@ namespace FightingArena.Tests
             });
         }
 
+        [Test]
+        [TestCase(20)]
+        [TestCase(30)]
+        [TestCase(10)]
+        public void WarriorsHPShouldLowerWhenAttacking(int data)
+        {
+            warrior2 = new Warrior("asd", data, 50);
+            int expected = warrior.HP - data;
 
+            warrior.Attack(warrior2);
+
+            Assert.AreEqual(expected, warrior.HP);
+        }
+
+        [Test]
+        [TestCase(51)]
+        [TestCase(100)]
+        public void WhenDamageIsMoreThanEnemysHealthHPShouldBe0(int data)
+        {
+            warrior = new Warrior("asd", data, 50);
+
+            warrior.Attack(warrior2);
+
+            Assert.AreEqual(0, warrior2.HP);
+        }
+
+        [Test]
+        [TestCase(50)]
+        [TestCase(10)]
+        public void AttackingShouldLowerEnemyHP(int data)
+        {
+            int expected = warrior2.HP - data;
+
+            warrior = new Warrior("asd", data, 50);
+            warrior.Attack(warrior2);
+
+            Assert.AreEqual(expected, warrior2.HP);
+        }
     }
 }
