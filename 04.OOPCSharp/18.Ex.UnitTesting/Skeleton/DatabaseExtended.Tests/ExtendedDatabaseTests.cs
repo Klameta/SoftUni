@@ -113,7 +113,7 @@ namespace DatabaseExtended.Tests
         [Test]
         public void RemovingPersonShouldNotWork()
         {
-            Assert.Catch(() =>
+            Assert.Throws<InvalidOperationException>(() =>
             {
                 database.Remove();
             });
@@ -136,7 +136,7 @@ namespace DatabaseExtended.Tests
             database.Add(person);
 
 
-            Assert.Catch(() =>
+            Assert.Throws<ArgumentOutOfRangeException>(() =>
             {
 
                 Person person1 = database.FindById(person.Id);
@@ -149,7 +149,7 @@ namespace DatabaseExtended.Tests
             Person person = new Person(1, "a");
 
 
-            Assert.Catch(() =>
+            Assert.Throws<InvalidOperationException>(() =>
             {
 
                 Person person1 = database.FindById(person.Id);
@@ -172,7 +172,7 @@ namespace DatabaseExtended.Tests
             database.Add(person);
 
 
-            Assert.Catch(() =>
+            Assert.Throws<ArgumentNullException>(() =>
             {
 
                 Person person1 = database.FindByUsername(person.UserName);
@@ -185,7 +185,7 @@ namespace DatabaseExtended.Tests
             Person person = new Person(1, "a");
 
 
-            Assert.Catch(() =>
+            Assert.Throws<InvalidOperationException>(() =>
             {
 
                 Person person1 = database.FindByUsername(person.UserName);
