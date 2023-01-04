@@ -43,19 +43,12 @@ namespace Formula1.Core
         {
             if (carRepository.FindByName(model) != null) throw new InvalidOperationException(string.Format(ExceptionMessages.CarExistErrorMessage, model));
 
-            IFormulaOneCar car;
-            if (type == "Ferrari")
+            IFormulaOneCar car = type switch
             {
-                car = new Ferrari(model, horsepower, engineDisplacement);
-            }
-            else if (type == "Williams")
-            {
-                car = new Williams(model, horsepower, engineDisplacement);
-            }
-            else
-            {
-                throw new InvalidOperationException(string.Format(ExceptionMessages.InvalidTypeCar, type));
-            }
+                nameof(Ferrari) => new Ferrari(model, horsepower, engineDisplacement),
+                nameof(Williams) => new Williams( model, horsepower, engineDisplacement),
+                _ => throw new InvalidOperationException(String.Format(ExceptionMessages.InvalidTypeCar, model))
+            };
 
             carRepository.Add(car);
             return string.Format(OutputMessages.SuccessfullyCreateCar, type, model);
