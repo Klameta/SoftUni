@@ -211,5 +211,51 @@ select * from Mountains
 select * from Peaks
 
 
+-- 10
+use SoftUni
+
+select EmployeeID, FirstName, LastName, Salary, DENSE_RANK() over (PARTITION BY Salary order by EmployeeID)
+from Employees
+where Salary >= 10000
+    and Salary <= 50000
+order by Salary desc
+
+-- 12
+use Geography
+
+select CountryName, IsoCode
+from Countries
+where LOWER(CountryName) like '%a%a%a%'
+order by IsoCode
+
+-- 13
+select PeakName, RiverName, lower(concat(left(PeakName, len(PeakName)-1),RiverName)) as Mix
+from Rivers as r
+join Peaks as p
+    on  right(PeakName, 1) = left(RiverName, 1)
+order by  Mix
+
+-- 14
+use Diablo
+select top(50) Name, format(Start,'yyyy-MM-dd') as 'Start'
+from Games
+where YEAR(Start) in (2011,2012)
+order by Start,
+         Name asc
+
+-- 15
+select Username, right(Email, len(Email) - charindex('@', Email)) as 'Email Provider'
+from Users
+order by [Email Provider],
+         Username
+
+-- 16
+select Username, IpAddress
+from Users
+where IpAddress like '___.1%.%.___'
+order by Username
+
+
+select  * from Users
 
 
