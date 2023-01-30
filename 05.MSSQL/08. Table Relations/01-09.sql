@@ -256,6 +256,37 @@ where IpAddress like '___.1%.%.___'
 order by Username
 
 
+-- 17
+
+select Name as 'Game', cast(
+    case
+        when datepart(hour, Start) < 12
+            then 'Morning'
+        when datepart(hour , Start) < 18
+            then 'Afternoon'
+    else 'Evening'
+    end
+    as varchar(50)) as 'Part pf Day', cast(
+        case
+            when Duration <=3
+                then 'Extra Short'
+            when Duration <= 6
+                then 'Short'
+            when Duration >6
+                then 'Long'
+            else 'Extra Long'
+        end
+        as varchar(50)
+    ) as 'Duration'
+from Games
+order by Game,
+         Duration
+
+--
+
+
+select *
+from Games;
 select  * from Users
 
 
