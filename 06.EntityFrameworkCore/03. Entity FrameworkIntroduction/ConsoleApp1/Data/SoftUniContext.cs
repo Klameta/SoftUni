@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using SoftUni.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+
 
 namespace SoftUni.Data
 {
@@ -17,11 +15,12 @@ namespace SoftUni.Data
         {
         }
 
-        public virtual DbSet<Address> Addresses { get; set; } = null!;
-        public virtual DbSet<Department> Departments { get; set; } = null!;
-        public virtual DbSet<Employee> Employees { get; set; } = null!;
-        public virtual DbSet<Project> Projects { get; set; } = null!;
-        public virtual DbSet<Town> Towns { get; set; } = null!;
+        public virtual DbSet<Address> Addresses { get; set; }
+        public virtual DbSet<Department> Departments { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<EmployeesProjects> EmployeesProjects { get; set; }
+        public virtual DbSet<Project> Projects { get; set; }
+        public virtual DbSet<Town> Towns { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -124,7 +123,7 @@ namespace SoftUni.Data
                     .HasConstraintName("FK_Employees_Employees");
             });
 
-            modelBuilder.Entity<EmployeeProject>(entity =>
+            modelBuilder.Entity<EmployeesProjects>(entity =>
             {
                 entity.HasKey(e => new { e.EmployeeId, e.ProjectId });
 
@@ -139,7 +138,7 @@ namespace SoftUni.Data
                     .HasConstraintName("FK_EmployeesProjects_Employees");
 
                 entity.HasOne(d => d.Project)
-                    .WithMany(p => p.EmployeesProjects)
+                    .WithMany(p => p.EmployeeProjects)
                     .HasForeignKey(d => d.ProjectId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_EmployeesProjects_Projects");
@@ -177,6 +176,7 @@ namespace SoftUni.Data
 
             OnModelCreatingPartial(modelBuilder);
         }
+
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }
