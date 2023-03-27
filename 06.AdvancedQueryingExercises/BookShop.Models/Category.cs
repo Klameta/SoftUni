@@ -1,6 +1,8 @@
 ﻿namespace BookShop.Models
 {
+    using Microsoft.EntityFrameworkCore;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
 
     public class Category
     {
@@ -11,6 +13,8 @@
 
         public int CategoryId { get; set; }
 
+        [Unicode(true)]
+        [MaxLength(50)]
         public string Name { get; set; }
 
         public ICollection<BookCategory> CategoryBooks { get; set; }

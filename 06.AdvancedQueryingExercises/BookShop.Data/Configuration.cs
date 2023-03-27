@@ -3,6 +3,6 @@
     internal class Configuration
     {
         internal static string ConnectionString
-            => "Server=.;Database=BookShop;Integrated Security=True;";
+            => @"Server=(localdb)\PLUTON;Database=BookShop;Integrated Security=True;";
     }
 }

@@ -1,7 +1,10 @@
-﻿using BookShop.Models.Enums;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Security;
+using BookShop.Models.Enums;
 
 namespace BookShop.Models
 {
+    using Microsoft.EntityFrameworkCore;
     using System;
     using System.Collections.Generic;
 
@@ -11,11 +14,14 @@ namespace BookShop.Models
         {
             this.BookCategories = new HashSet<BookCategory>();
         }
-
         public int BookId { get; set; }
 
+        [Unicode(true)]
+        [MaxLength(50)]
         public string Title { get; set; }
 
+        [Unicode(true)]
+        [MaxLength(1_000)]
         public string Description { get; set; }
 
         public EditionType EditionType { get; set; }
