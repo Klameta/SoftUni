@@ -8,18 +8,19 @@ namespace BookShop
 {
     using Data;
     using Initializer;
+    using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 
     public class StartUp
     {
         public static void Main()
         {
-            using var db = new BookShopContext();
+            var db = new BookShopContext();
             DbInitializer.ResetDatabase(db);
-
+            
             // var command = int.Parse(Console.ReadLine());
 
-            Console.WriteLine(GetMostRecentBooks(db));
+            Console.WriteLine(CountCopiesByAuthor(db));
         }
 
         public static string GetBooksByAgeRestriction(BookShopContext context, string command)
@@ -41,7 +42,6 @@ namespace BookShop
 
             return string.Join(Environment.NewLine, booksInfo);
         }
-
         public static string GetBooksByPrice(BookShopContext context)
         {
             var booksInfo = context.Books
@@ -54,7 +54,6 @@ namespace BookShop
 
             return string.Join(Environment.NewLine, booksInfo.Select(b => b.StringInfo));
         }
-
         public static string GetBooksNotReleasedIn(BookShopContext context, int year)
         {
             var booksInfo = context.Books
@@ -64,7 +63,6 @@ namespace BookShop
 
             return string.Join(Environment.NewLine, booksInfo);
         }
-
         public static string GetBooksByCategory(BookShopContext context, string input)
         {
             var categoriesInput = input.ToLower().Split(' ', StringSplitOptions.RemoveEmptyEntries).ToArray();
@@ -77,7 +75,6 @@ namespace BookShop
 
             return string.Join(Environment.NewLine, booksInfo.Select(bc => bc));
         }
-
         public static string GetBooksReleasedBefore(BookShopContext context, string date)
         {
             DateTime dateBefore = DateTime.ParseExact(date, "dd-MM-yyyy", null);
@@ -209,12 +206,13 @@ namespace BookShop
                 .Select(c => new
                 {
                     c.Name,
-                    Books = c.CategoryBooks.Select(cb => new
+                    Books = c.CategoryBooks
+                    .OrderByDescending(cb => cb.Book.ReleaseDate)
+                    .Select(cb => new
                     {
                         ReleaseDate = cb.Book.ReleaseDate.Value.Year,
                         cb.Book.Title
                     })
-                    .OrderByDescending(c => c.ReleaseDate)
                     .Take(3)
                     .ToList()
                 })
@@ -232,7 +230,27 @@ namespace BookShop
             }
 
             return sb.ToString().TrimEnd();
+        }
+        public static void IncreasePrices(BookShopContext context)
+        {
+            var books = context.Books
+                .Where(b => b.ReleaseDate.Value.Year < 2010);
 
+            foreach (var book in books)
+            {
+                book.Price += 5;
+            }
+        }
+        public static int RemoveBooks(BookShopContext context)
+        {
+            var booksToRemove = context.Books
+                .Where(b => b.Copies < 4200);
+            int removedCount = booksToRemove.Count();
+
+            context.Books.RemoveRange(booksToRemove);
+            context.SaveChanges();
+
+            return removedCount;
         }
 
     }
