@@ -48,6 +48,24 @@ namespace ProductShop.Data
                       .WithOne(x => x.Seller)
                       .HasForeignKey(x => x.SellerId);
             });
+
+            modelBuilder.Entity<Product>(p =>
+            {
+                p.HasOne(p => p.Seller)
+                .WithMany(s => s.ProductsSold)
+                .OnDelete(DeleteBehavior.Restrict);
+            });
+
+
+            modelBuilder.Entity<Product>(p =>
+            {
+                p.HasOne(p => p.Buyer)
+                .WithMany(b => b.ProductsBought)
+                .OnDelete(DeleteBehavior.Restrict)
+                .IsRequired(false);
+            });
+
+            
         }
     }
 }
