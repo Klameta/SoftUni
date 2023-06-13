@@ -33,10 +33,15 @@ namespace MVCIntroDemo.Controllers
             }
         };
 
-
-        [ActionName("My-Products")]
-        public IActionResult All()
+        public IActionResult All(string keyword)
         {
+            if (keyword != null)
+            {
+                var currProducs = _products.Where(p => p.Name.ToLower() == keyword.ToLower()).ToList();
+                
+                return View(currProducs);
+            }
+
             return View(_products);
         }
 
