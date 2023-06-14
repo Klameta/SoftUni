@@ -5,7 +5,7 @@ namespace ChatApp.Controllers
 {
     public class ChatController : Controller
     {
-        private  List<KeyValuePair<string, string>> _messages =
+        private static List<KeyValuePair<string, string>> _messages =
              new List<KeyValuePair<string, string>>();
 
         public IActionResult Show()

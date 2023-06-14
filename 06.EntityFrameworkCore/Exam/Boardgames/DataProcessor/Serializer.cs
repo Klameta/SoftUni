@@ -75,7 +75,7 @@
                .Take(5)
                .ToArray();
 
-            string serialized = JsonConvert.SerializeObject(sellers, Formatting.Indented);
+            string serialized = JsonConvert.SerializeObject(sellers, Formatting.None);
             return serialized;
         }
     }
