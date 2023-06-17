@@ -1,5 +1,5 @@
-﻿using Task = Data.Models.Task;
-using Data.Models;
+﻿using Task = DataModels.Task;
+using DataModels;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;

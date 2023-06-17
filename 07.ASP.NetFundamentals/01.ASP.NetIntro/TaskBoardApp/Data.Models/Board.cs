@@ -1,5 +1,5 @@
 ﻿
-namespace Data.Models
+namespace DataModels
 {
     using System.ComponentModel.DataAnnotations;
     using static Common.EntityValidation.Board;

@@ -10,7 +10,7 @@ namespace TaskBoardApp.Models.Task
         public string Title { get; set; }
         [Required]
         [StringLength(DescriptionMaxLenght, ErrorMessage = "The {0} should be at least {2} charachters long or {1} charachters at most", MinimumLength = DescriptionMinLenght)]
-        public string Desciption { get; set; }
+        public string Description { get; set; }
         [Display(Name = "Board")]
         public int BoardId { get; set; }
 

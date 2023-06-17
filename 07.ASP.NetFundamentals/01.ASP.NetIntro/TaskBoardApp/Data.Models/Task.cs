@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using static Common.EntityValidation.Task;
 
-namespace Data.Models
+namespace DataModels
 {
     public class Task
     {

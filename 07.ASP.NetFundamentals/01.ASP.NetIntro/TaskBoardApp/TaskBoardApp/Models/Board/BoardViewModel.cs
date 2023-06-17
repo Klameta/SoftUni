@@ -1,4 +1,4 @@
-﻿using Data.Models;
+﻿using DataModels;
 using TaskBoardApp.Models.Task;
 
 namespace TaskBoardApp.Models.Board

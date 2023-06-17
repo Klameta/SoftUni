@@ -1,4 +1,4 @@
-﻿using Task = Data.Models.Task;
+﻿using Task = DataModels.Task;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

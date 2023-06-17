@@ -15,10 +15,6 @@ namespace TaskBoardApp.Controllers
         {
             _context = context;
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
 
         public IActionResult All()
         {
