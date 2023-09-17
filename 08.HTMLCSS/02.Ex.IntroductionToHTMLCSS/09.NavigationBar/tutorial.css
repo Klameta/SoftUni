@@ -1,0 +1,8 @@
+.wrapper{
+    width: 600px;
+    height: 340px;
+    text-align: center;
+    align-content: center;
+    background-color: #999;
+    border: 1px solid #000;
+}
