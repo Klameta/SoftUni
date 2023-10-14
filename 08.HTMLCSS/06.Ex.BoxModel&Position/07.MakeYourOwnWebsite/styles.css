@@ -1,1 +1,20 @@
-/* TODO: style the html */
+div{
+    width: 280px;
+    display: inline-block;
+    padding: 16px 16px 16px auto;
+    padding-left: 32px;
+    margin-top: 20px;
+    background-color: #0A2C48;
+    color: #fff;
+    border-radius: 4px;
+    font-family: Times, serif;
+}
+
+div:hover{
+    background-color: #2a4c68; 
+}
+
+p{
+    color: #c9d6ff;
+    font: 18px;
+}
