@@ -1,0 +1,44 @@
+body{
+    font-family: Helvetica, sans-serif;
+    margin: 3em;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    background-color: rgb(238, 238, 238);
+}
+
+article{
+    width: 800px;
+    display: inline-block;
+}
+
+header{
+    margin-bottom: 3em;
+}
+
+ul{
+    list-style-type: square;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+img{
+    width: 500px;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+footer
+{
+    margin-top: 2em;
+}
+
+aside{
+    display: inline-block;
+    width: 17em;
+    vertical-align: top;
+    box-sizing: inherit;
+}
+
+h1,h2{
+    font-family: Georgia, serif;
+}
