@@ -1,0 +1,33 @@
+body{
+    font-family: Helvetica, sans-serif;
+    margin: 4em;
+}
+
+header{
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5em;
+}
+
+nav *{
+    display: inline-block;
+    margin-bottom: 0.76em;
+    margin-right: 1em;
+    text-decoration: none;
+    color: rgb(32, 176, 0)
+}
+
+
+h1{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-right: 2.5em;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 550;
+    margin-top: 2em;
+}
