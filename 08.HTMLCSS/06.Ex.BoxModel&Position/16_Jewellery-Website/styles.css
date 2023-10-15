@@ -1,0 +1,23 @@
+section{
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 250px;
+    right: 435px;
+}
+
+h3{
+    font-size: 16px;
+    margin: 0px;
+}
+
+span{
+    padding-left: 3px;
+    color: gray;
+    font-size: 14px;
+}
+
+div{
+    position: relative;
+    top: -50px;
+    right: -8px;
+}
