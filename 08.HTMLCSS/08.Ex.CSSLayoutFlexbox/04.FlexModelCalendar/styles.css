@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section, div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span {
+    border: 1px solid black;
+    flex-grow: 1;
+}
+
+.container {
+    min-width: 60vw;
+    height: 40vw;
+    text-align: center;
+}
+
+.week {
+    line-height: 3;
+    flex-grow: 5;
+}
+
+
+.week > span:nth-child(1) {
+    width: 100%;
+}
+
+.week>span:nth-child(7) {
+    width: 100%;
+}
+
+.notes {
+    flex-direction: column;
+    flex-grow: 4;
+}
