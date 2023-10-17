@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(240, 238, 238);
+}
+
+body,ul,li{
+    display: flex;
+}
+
+ul{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 550px;
+    gap: 1em;
+}
+
+li{
+    height: 200px;
+    width: 130px;
+    padding: 0.5em;
+    background-color: white;
+    border: 7px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery{
+    width: 800px;
+}
+
+img{
+    max-width: 100%; /* Limit the maximum width of the image to the width of the li */
+  max-height: 100%; /* Limit the maximum height of the image to the height of the li */
+  width: auto; /* Ensure the image width adjusts to the aspect ratio */
+  height: auto; 
+}

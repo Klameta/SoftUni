@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   margin: 4em;
+}
+
+body>header{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: xx-large;
+    border-bottom: 2px solid black;
+}
+
+main h1,h2,h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 555;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+}
+
+article{
+    flex: 4;
+}
+
+aside{
+    flex: 2;
+}
+
+article header{
+    display: inline-block;
+}
+
+header img{
+    float: right;
+}
