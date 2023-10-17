@@ -1,0 +1,18 @@
+.articles{
+    display: flex;
+    justify-content: space-around;
+}
+
+.articles>*{
+    max-width: 25vw;
+}
+
+p{
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+h2{
+    font-family: Georgia, Times, serif;
+    line-height: 1.2;
+}
