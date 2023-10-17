@@ -4,6 +4,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 1rem;
 }
 
 body > *{
@@ -11,16 +12,31 @@ body > *{
     background-color: #fff;
     border-radius: 0.4rem;
     color: #000;
+    box-shadow: 0 0 0.2rem #3f3f3f;
 }
 
 header,footer{
     flex-basis: 100%;
 }
 
+header{
+    height: 5rem;
+}
+
+footer{
+    height: 4rem;
+}
+
+main, aside{
+    height: 20rem;
+}
+
 main{
-    flex: 8 1 40rem;
+    flex: 1;
+    align-content:self-start;
 }
 
 aside{
-    flex:2 1 20rem;
+    flex:0 0 15rem;
+    align-content: self-end;
 }
