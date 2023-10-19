@@ -1,0 +1,49 @@
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+body>*:not(:nth-child(2)){
+    background-color: lightskyblue;
+    border-radius: 4px;
+    padding-left: 1em;
+}
+
+div{
+    display: flex;
+    gap: 1em;
+}
+
+div>*{
+    background-color: lightskyblue;
+    border-radius: 4px;
+    padding-left: 1em;
+}
+
+aside{
+    flex-grow: 5;
+}
+
+main{
+    flex-grow: 1;
+    padding: 1em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1em;
+}
+
+nav>*{
+    list-style-type: none;
+    color: purple;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
