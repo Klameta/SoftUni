@@ -1,0 +1,40 @@
+body{
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 35vw;
+    background-color: white;
+    box-shadow: 0 0 1em 1px;
+    border-radius: 5px;
+    margin: 4em;
+}
+
+img{
+    width: 100%;
+    height: 90%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.top{
+    padding: 1em;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0;
+}
+
+a{
+    float: right;
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
