@@ -1,0 +1,55 @@
+footer{
+    display: flex;
+    width: 100vw;
+    padding: 5vw;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 5px solid rgb(128, 128, 128, 0.2);
+    gap: 1em;
+    list-style-type: none;
+}
+
+h2{
+    margin-top: 0;
+}
+
+.ad{
+    width: 20em;
+}
+
+.sitemap{
+    display: flex;
+    gap: 7em;
+    justify-content: center;
+    width:25em;
+}
+
+.contacts{
+    width: 20em;
+}
+
+.contacts-list{
+    padding: 0;
+}
+
+.contacts li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.4em;
+    gap: 0.5em;
+   
+}
+
+.contacts li, .sitemap li{
+    margin-bottom: 0.4em;
+}
+
+.contacts li p{
+    margin: 0;
+}
+
+
+.right{
+    align-self: center;
+    justify-self: center;
+}

@@ -1,0 +1,43 @@
+@media (min-width: 1024px) {
+    footer{
+        flex-direction: row;
+    }
+    header{
+        flex-direction: row;
+    }
+    header nav{
+        flex-direction: row;
+    }
+}
+
+/* Phones */
+@media (max-width: 767px) {
+    :root {
+        font-size: 16px; /* Base font size for phones */
+    }
+    /* Adjust font sizes for specific elements as needed */
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        font-size: 18px; /* Base font size for tablets */
+    }
+    /* Adjust font sizes for specific elements as needed */
+}
+
+/* Laptops */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    :root {
+        font-size: 20px; /* Base font size for laptops */
+    }
+    /* Adjust font sizes for specific elements as needed */
+}
+
+/* Desktops */
+@media (min-width: 1440px) {
+    :root {
+        font-size: 24px; /* Base font size for desktops */
+    }
+    /* Adjust font sizes for specific elements as needed */
+}

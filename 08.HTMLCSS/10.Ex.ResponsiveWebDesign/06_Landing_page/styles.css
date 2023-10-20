@@ -4,7 +4,7 @@
 @import url(layout/general.css);
 @import url(layout/header.css);
 @import url(layout/typography.css);
-
-img{
-    width: 5em;
-}
+@import url(layout/responsive.css);
+@import url(layout/footer.css);
+@import url(layout/need-website.css);
+@import url(layout/main.css);

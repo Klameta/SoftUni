@@ -55,10 +55,7 @@ header{
 }
 
 .logo{
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    float: left;
+   width: 16em;
 }
 
 .logo >*{
@@ -68,12 +65,11 @@ header{
 
 .logo h1{
     color: purple;
-    word-spacing: 16px;
-    letter-spacing: 5px;
+
 }
 
 .logo p{
-    font-size: 10px;
+    font-size: 0.6em;
     text-transform: uppercase;
 }
 
@@ -82,7 +78,7 @@ header nav{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
     list-style-type: none;
 }
 
@@ -100,6 +96,7 @@ main{
     flex-direction: column;
     justify-content: center;
     gap: 3em;
+    margin-top: 5em;
 }
 
 /* need websiete */
@@ -156,7 +153,7 @@ ul.people-list{
     justify-content: center;
     align-items: center;
     gap: 1em;
-    max-width: 80em;
+    max-width: 45em;
     padding-left: 0;
 }
 
@@ -197,12 +194,14 @@ ul.people-list{
     background-color: purple;
     color: white;
     width: 100vw;
-    align-self: center;
+    position: absolute;
+    left: 0;
     justify-content: center;
     align-items: center;
     gap: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
+    box-shadow: -5px 0 10px 2px rgb(128, 128, 128, 0.6);
 }
 
 form{
@@ -229,19 +228,113 @@ form input{
     border: 3px solid black;
 }
 
+.testimonials{
+    margin-top: 10em;
+}
+
 /* ------------- */
 
 /* FOOTER  */
 footer{
     display: flex;
+    width: 100vw;
+    padding: 5vw;
     flex-direction: column;
     justify-content: center;
+    border-top: 5px solid rgb(128, 128, 128, 0.2);
+    gap: 1em;
+    list-style-type: none;
+}
 
+h2{
+    margin-top: 0;
+}
+
+.ad{
+    width: 20em;
+}
+
+.sitemap{
+    display: flex;
+    gap: 7em;
+    justify-content: center;
+    width:25em;
+}
+
+.contacts{
+    width: 20em;
+}
+
+.contacts-list{
+    padding: 0;
+}
+
+.contacts li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.4em;
+    gap: 0.5em;
+   
+}
+
+.contacts li, .sitemap li{
+    margin-bottom: 0.4em;
+}
+
+.contacts li p{
+    margin: 0;
+}
+
+
+.right{
+    align-self: center;
+    justify-self: center;
 }
 
 /* !!!!!RESPONSIVE */
-@media (max-width: 600px) {
-    body{
-        font-size: 12px;
+
+
+@media (min-width: 1024px) {
+    header{
+        flex-direction: row;
     }
+    header nav{
+        flex-direction: row;
+    }
+
+    footer{
+        flex-direction: row;
+    }
+}
+
+/* Phones */
+@media (max-width: 767px) {
+    :root {
+        font-size: 16px; /* Base font size for phones */
+    }
+    /* Adjust font sizes for specific elements as needed */
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        font-size: 18px; /* Base font size for tablets */
+    }
+    /* Adjust font sizes for specific elements as needed */
+}
+
+/* Laptops */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    :root {
+        font-size: 20px; /* Base font size for laptops */
+    }
+    /* Adjust font sizes for specific elements as needed */
+}
+
+/* Desktops */
+@media (min-width: 1440px) {
+    :root {
+        font-size: 24px; /* Base font size for desktops */
+    }
+    /* Adjust font sizes for specific elements as needed */
 }
