@@ -1,11 +1,12 @@
 @media (min-width: 1024px) {
-    footer{
-        flex-direction: row;
-    }
     header{
         flex-direction: row;
     }
     header nav{
+        flex-direction: row;
+    }
+
+    footer{
         flex-direction: row;
     }
 }

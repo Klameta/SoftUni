@@ -1,7 +1,7 @@
 footer{
     display: flex;
-    width: 100vw;
-    padding: 5vw;
+    width: 100%;
+    padding-top: 5vw;
     flex-direction: column;
     justify-content: center;
     border-top: 5px solid rgb(128, 128, 128, 0.2);
