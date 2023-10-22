@@ -1,0 +1,19 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2em;
+}
+header img{
+    width: 6em;
+}
+header nav{
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+}
+header nav li>*{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}

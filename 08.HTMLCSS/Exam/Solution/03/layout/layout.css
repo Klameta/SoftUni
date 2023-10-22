@@ -1,0 +1,23 @@
+img{
+    width: 100%;
+    height: auto;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-image: url(/Solution/03/images/background.jpg);
+    background-color: #00032f;
+    background-size: 1200px;
+    background-position: center 0;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
