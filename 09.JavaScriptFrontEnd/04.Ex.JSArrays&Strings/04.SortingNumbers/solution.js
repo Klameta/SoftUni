@@ -1,29 +1,14 @@
 function solve(numArr) {
-  let smallNums = numArr
-    .map(function (num) {
-      return num;
-    })
-    .sort();
-  let bigNums = numArr
-    .map(function (num) {
-      return num;
-    })
-    bigNums = bigNums.sort().reverse()
-
-  let indexTracker = 0;
-
+  numArr.sort((a, b) => a - b);
   let result = [];
-  for (let i = 0; i < numArr.length; i++) {
-    if (i % 2 != 0) {
-      result.push(bigNums[indexTracker]);
-      indexTracker++;
+  let length = numArr.length;
+
+  for (let i = 0; i < length; i++) {
+    if (i % 2 == 0) {
+      result.push(numArr.shift());
     } else {
-      result.push(smallNums[indexTracker]);
+      result.push(numArr.pop());
     }
   }
-
-  console.log(result);
-  return result;
+  return result
 }
-
-solve([22, 9, 63, 3, 2, 19, 54, 11, 21, 18]);
