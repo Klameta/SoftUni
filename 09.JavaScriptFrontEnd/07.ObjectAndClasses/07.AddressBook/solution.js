@@ -1,19 +1,28 @@
 function solve(inputArr) {
-  let addresses = {};
+  let addresses = [];
   for (const currAddress of inputArr) {
     let [name, address] = currAddress.split(":");
 
-    address[name] = address;
+    addresses[name] = address;
   }
+  addresses;
 
-  for (let currAddress in addresses) {
-    console.log(`${currAddress} -> ${addresses[currAddress]}`);
+  let entries = Object.entries(addresses);
+  for (const [key, value] of entries.sort((a, b) => a[0].localeCompare(b[0]))) {
+    console.log(`${key} -> ${value}`);
   }
 }
 
 solve([
-  "Tim:Doe Crossing",
-  "Bill:Nelson Place",
-  "Peter:Carlyle Ave",
-  "Bill:Ornery Rd",
+  "Bob:Huxley Rd",
+  "John:Milwaukee Crossing",
+  "Peter:Fordem Ave",
+  "Bob:Redwing Ave",
+  "George:Mesta Crossing",
+  "Ted:Gateway Way",
+  "Bill:Gateway Way",
+  "John:Grover Rd",
+  "Peter:Huxley Rd",
+  "Jeff:Gateway Way",
+  "Jeff:Huxley Rd",
 ]);
