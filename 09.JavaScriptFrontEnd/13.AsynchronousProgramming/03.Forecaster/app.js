@@ -33,7 +33,7 @@ function attachEvents() {
         throw new Error("Error");
       }
 
-      showForecastToday();
+      getForecastToday();
       showForecastFor3Days();
     } catch (e) {
       forecastDiv.style.display = "block";
@@ -41,34 +41,75 @@ function attachEvents() {
     }
   });
 
-  async function showForecastToday() {
+  async function getForecastToday() {
     const response = await fetch(baseUrlToday + cityCode);
     const todayForecastInfo = await response.json();
 
     const [forecast, name] = Object.values(todayForecastInfo);
     const [condition, high, low] = Object.values(forecast);
 
-    const conditionSymbol =
-      condition == "Sunny"
-        ? '&#x2600;'
-        : condition == "Partly sunny"
-        ? '&#x26C5;'
-        : condition == "Overcast"
-        ? '&#x2601;'
-        : condition == "Rain"
-        ? '&#x2614;'
-        : '&#x176;';
-
-    console.log(conditionSymbol);
+    outPuttingShowForecastToday(name, condition, high, low);
   }
 
+  function outPuttingShowForecastToday(name, condition, high, low) {
+    {
+      const conditionSymbol =
+        condition == "Sunny"
+          ? "☀️"
+          : condition == "Partly sunny"
+          ? "⛅"
+          : condition == "Overcast"
+          ? "☁️"
+          : condition == "Rain"
+          ? "☔"
+          : "°";
+
+      let forecastDiv = document.createElement("div");
+      let spanCondSym = document.createElement("span");
+      let spanName = document.createElement("span");
+      let spanLowHigh = document.createElement("span");
+      let spanCond = document.createElement("span");
+      let forecastDataSpan = document.createElement("span");
+
+      forecastDiv.className = "forecasts";
+      forecastDataSpan.className = "condition";
+
+      spanCondSym.textContent = conditionSymbol;
+      spanName.textContent = name;
+      spanLowHigh.textContent = `${low}°/${high}°`;
+      spanCond.textContent = condition;
+
+      spanCondSym.classList.add("symbol");
+      spanName.classList.add("forecast-data");
+      spanLowHigh.classList.add("forecast-data");
+      spanCond.classList.add("forecast-data");
+
+      forecastDiv.appendChild(spanCondSym);
+      forecastDataSpan.appendChild(spanName);
+      forecastDataSpan.appendChild(spanLowHigh);
+      forecastDataSpan.appendChild(spanCond);
+
+      let currentDivId = document.getElementById("current");
+      let forecastDivId = document.getElementById('forecast');
+      forecastDivId.style.display = "block";
+
+      currentDivId.appendChild(forecastDiv);
+      currentDivId.appendChild(forecastDataSpan);
+
+      console.log(currentDivId);
+      console.log(forecastDiv);
+      console.log(forecastDataSpan);
+    }
+
+    
+  }
   async function showForecastFor3Days() {
     const response = await fetch(baseUrl3Days + cityCode);
     const threeDayForecastInfo = await response.json();
-
+    
     let [forecast, name] = Object.values(threeDayForecastInfo);
     forecast = forecast.map((f) => Object.values(f));
-
+    
     console.log(forecast);
   }
 }
