@@ -6,13 +6,14 @@ function attachEvents() {
   const viewBtn = document.getElementById("btnViewPost");
   const postsDiv = document.getElementById("posts");
 
-  let selectedPost = null;
   let posts = {};
 
   loadPostsBtn.addEventListener("click", async function getAllPosts() {
     const response = await fetch(basrUrlPosts);
     const postsInfo = await response.json();
     const postInfoArr = Object.entries(postsInfo);
+
+    postsDiv.innerHTML = "";
 
     for (const post of postInfoArr) {
       const postKey = post[0];
@@ -28,20 +29,20 @@ function attachEvents() {
         id,
         title,
       };
+
+      if (postKey == "-MSbypx-13fHPDyzNRtf") {
+        selectedPost = option;
+      }
     }
   });
 
-  postsDiv.addEventListener("change", function (event) {
-    const selectedOption = event.target.value;
-    selectedPost = event.target;
-  });
 
   viewBtn.addEventListener("click", async function GetAllComments() {
     const response = await fetch(baseUrlComments);
     const allCommentsInfo = await response.json();
     const commentInfoArr = Object.entries(allCommentsInfo);
 
-    const postKey = selectedPost.value;
+    const postKey = postsDiv.value;
     const post = posts[postKey];
 
     let postTitle = document.getElementById("post-title");
@@ -52,7 +53,7 @@ function attachEvents() {
     let postComments = document.getElementById("post-comments");
 
     while (postComments.firstChild) {
-      postComments.removeChild(parentElement.firstChild);
+      postComments.removeChild(postComments.firstChild);
     }
 
     for (const comment of commentInfoArr) {
