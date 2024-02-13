@@ -6,4 +6,4 @@ function solve(numberArr) {
 
         }
     }
-}
+} COCK- FROM BEKAM<3
